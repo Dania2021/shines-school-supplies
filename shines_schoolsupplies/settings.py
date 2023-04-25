@@ -28,10 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-dania2021-shines-school-tajplsc5s9.us2.codeanyapp.com']
-
+ALLOWED_HOSTS = ['shine-school-supplies.herokuapp.com', 'localhost']
 
 # Application definition
 
