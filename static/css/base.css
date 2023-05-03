@@ -56,6 +56,10 @@ body {
     color: white;
 }
 
+.bg-teal {
+    background: #00827f;
+}
+
 .border-black {
     border: 1px solid black;
 }
