@@ -143,8 +143,21 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+    <!--Main content-->
+    <main>
+        <div class="content-container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+
+
+    <!-- Footer-->
+
+    <div class="footer-container pt-5">
+        {% include 'includes/footer-content.html' %}
+    </div>
+
 
     {% block postloadjs %}
     {% endblock %}

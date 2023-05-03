@@ -64,6 +64,14 @@ body {
     border: 1px solid black;
 }
 
+.content-container {
+    padding: 5rem 3rem;
+}
+
+.footer-container {
+    background: #fff;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
