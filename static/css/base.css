@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: "Oswald";
+    z-index: 5;
 }
 
 /* from Bulma */
@@ -69,7 +70,12 @@ body {
 }
 
 .footer-container {
-    background: #fff;
+    background: #87CEEB;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 /* -------------------------------- Media Queries */
