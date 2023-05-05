@@ -65,6 +65,7 @@ body {
     border: 1px solid black;
 }
 
+
 .content-container {
     padding: 5rem 3rem;
 }
@@ -76,6 +77,16 @@ body {
 a {
     text-decoration: none;
     color: #000;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */

@@ -7,3 +7,11 @@ def index(request):
     """
 
     return render(request, 'home/index.html')
+
+
+def privacy(request):
+    """
+    A view to the privacy page
+    """
+
+    return render(request, 'home/privacy.html')
