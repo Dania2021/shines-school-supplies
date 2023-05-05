@@ -15,3 +15,11 @@ def privacy(request):
     """
 
     return render(request, 'home/privacy.html')
+
+
+def terms(request):
+    """
+    A view to the terms page
+    """
+
+    return render(request, 'home/terms.html')
