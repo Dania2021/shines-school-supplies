@@ -23,3 +23,11 @@ def terms(request):
     """
 
     return render(request, 'home/terms.html')
+
+
+def delivery(request):
+    """
+    A view to the delivery page
+    """
+
+    return render(request, 'home/delivery.html')
