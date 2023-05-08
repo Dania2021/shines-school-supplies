@@ -201,6 +201,7 @@ MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Sending registration confirmation email
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'shineschoolsupplies@example.com'
