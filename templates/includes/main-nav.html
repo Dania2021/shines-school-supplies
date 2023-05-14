@@ -24,10 +24,13 @@
                 Art
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="art-link">
-                <a href="" class="dropdown-item">Crayons &amp; Chalk</a>
-                <a href="" class="dropdown-item">Pencil Colours &amp; Markers</a>
-                <a href="" class="dropdown-item">Paint &amp; Paint Brush</a>
-                <a href="" class="dropdown-item">All Art</a>
+                <a href="{% url 'products' %}?category=crayons_chalk" class="dropdown-item">Crayons &amp; Chalk</a>
+                <a href="{% url 'products' %}?category=pencil_colours_markers" class="dropdown-item">Pencil Colours
+                    &amp; Markers</a>
+                <a href="{% url 'products' %}?category=paint_paint_brush" class="dropdown-item">Paint &amp; Paint
+                    Brush</a>
+                <a href="{% url 'products' %}?category=crayons_chalk,pencil_colours_markers,paint_paint_brush"
+                    class="dropdown-item">All Art</a>
             </div>
         </li>
 
@@ -37,10 +40,11 @@
                 Craft
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="craft-link">
-                <a href="" class="dropdown-item">Beads &amp; Buttons</a>
-                <a href="" class="dropdown-item">Glitter &amp; Slime</a>
-                <a href="" class="dropdown-item">Knitting &amp; Sewing</a>
-                <a href="" class="dropdown-item">All Craft</a>
+                <a href="{% url 'products' %}?category=beads_buttons" class="dropdown-item">Beads &amp; Buttons</a>
+                <a href="{% url 'products' %}?category=glitter_slime" class="dropdown-item">Glitter &amp; Slime</a>
+                <a href="{% url 'products' %}?category=knitting_sewing" class="dropdown-item">Knitting &amp; Sewing</a>
+                <a href="{% url 'products' %}?category=beads_buttons,glitter_slime,knitting_sewing"
+                    class="dropdown-item">All Craft</a>
             </div>
         </li>
 
@@ -50,10 +54,11 @@
                 Stationary
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="stationary-link">
-                <a href="" class="dropdown-item">Pen &amp; Pencils</a>
-                <a href="" class="dropdown-item">Eraser &amp; Sharpner</a>
-                <a href="" class="dropdown-item">Scissors &amp; Tape</a>
-                <a href="" class="dropdown-item">All Stationary</a>
+                <a href="{% url 'products' %}?category=pen_pencils" class="dropdown-item">Pen &amp; Pencils</a>
+                <a href="{% url 'products' %}?category=eraser_sharpner" class="dropdown-item">Eraser &amp; Sharpner</a>
+                <a href="{% url 'products' %}?category=scissors_tape" class="dropdown-item">Scissors &amp; Tape</a>
+                <a href="{% url 'products' %}?category=pen_pencils,eraser_sharpner,scissors_tape"
+                    class="dropdown-item">All Stationary</a>
             </div>
         </li>
     </ul>
