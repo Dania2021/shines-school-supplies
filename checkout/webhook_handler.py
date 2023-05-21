@@ -41,7 +41,7 @@ class StripeWH_Handler:
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
-        
+
         order_exists = False
         attempt = 1
         while attempt <= 5:
@@ -67,7 +67,8 @@ class StripeWH_Handler:
                 time.sleep(1)
         if order_exists:
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'Webhook received: {event["type"]} | SUCCESS: \
+                          Verified order already in database',
                 status=200)
         else:
             order = None
@@ -98,7 +99,7 @@ class StripeWH_Handler:
                     order.delete()
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
-                    status=500)   
+                    status=500)
 
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
@@ -109,5 +110,6 @@ class StripeWH_Handler:
         Handle the payment_intent.payment_failed webhook from Stripe
         """
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            content=f'Webhook received: {event["type"]} | SUCCESS: \
+                     Created order in webhook',
             status=200)
