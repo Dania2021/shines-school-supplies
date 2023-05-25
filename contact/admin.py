@@ -10,4 +10,3 @@ class ContactFormAdmin(admin.ModelAdmin):
 
 
 admin.site.register(ContactForm, ContactFormAdmin)
-
