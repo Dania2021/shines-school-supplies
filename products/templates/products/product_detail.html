@@ -117,7 +117,7 @@
                           <p class="text-muted d-inline small">By {{ review.author }} on {{ review.created_on }}</p>
                           {% if review.author == request.user %}
                              <small class="ml-3">
-                                 <a href="" class="update-link text-success">Edit</a> |
+                                 <a href="{% url 'edit_review' review.id %}" class="update-link text-success">Edit</a> |
                                  <a href="" class="remove-item text-danger">Delete</a>
                               </small>
                          {% endif %}
