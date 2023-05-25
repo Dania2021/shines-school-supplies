@@ -118,7 +118,7 @@
                           {% if review.author == request.user %}
                              <small class="ml-3">
                                  <a href="{% url 'edit_review' review.id %}" class="update-link text-success">Edit</a> |
-                                 <a href="" class="remove-item text-danger">Delete</a>
+                                 <a href="{% url 'delete_review' review.id %}" class="remove-item text-danger">Delete</a>
                               </small>
                          {% endif %}
                     </div>
