@@ -100,7 +100,42 @@
             </div>
         </div>
     </div>
+
+    <!-- Product reviews -->
+    <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+                <h3 class="py-3 my-0">Reviews ({{ product_reviews | length }})</h3>
+                <hr class="mb-1">
+
+                {% if product_reviews %}
+                   <div class="review-container mt-4">
+                      {% for review in product_reviews %}
+                          <div class="my-4 border-bottom">
+                          <h5>{{ review.title }}</h5>
+                          <p>{{ review.content }}</p>
+                          <p class="text-dark"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</p>
+                          <p class="text-muted d-inline small">By {{ review.author }} on {{ review.created_on }}</p>
+                          {% if review.author == request.user %}
+                             <small class="ml-3">
+                                 <a href="" class="update-link text-success">Edit</a> |
+                                 <a href="" class="remove-item text-danger">Delete</a>
+                              </small>
+                         {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="my-4">
+                This Product has no reviews, yet!
+            </div>
+            {% endif %}
+            <a href="" class="btn btn-black rounded-0">
+                <span class="text-uppercase">Leave a Review</span>
+            </a>
+        </div>
+    </div>
 </div>
+    
 {% endblock %}
 
 {% block postloadjs %}
