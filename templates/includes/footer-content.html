@@ -5,7 +5,7 @@
             <h4 class="col-pb-3">Contact</h4>
             <a href="{% url 'contact' %}">Contact Us Form</a>
             <h5 class="col-pb-3">Follow Us On</h5>
-            <a href="https://www.facebook.com/" class="social-icon" target="_blank" rel="noopener nofollow"
+            <a href="https://www.facebook.com/profile.php?id=100092700921305" class="social-icon" target="_blank" rel="noopener nofollow"
                 aria-label="Link to Facebook">
                 <i class="fab fa-facebook-square"></i>
             </a>
@@ -33,10 +33,10 @@
             enctype="multipart/form-data">
             {% csrf_token %}
             {{ subscriber_form | crispy }}
-            <div class="mt-3">
-                <button class="btn btn-black rounded-0" type="submit">Subscribe!</button>
-            </div>
-        </form>
+                <div class="mt-3">
+                    <button class="btn btn-black rounded-0" type="submit">Subscribe!</button>
+                </div>
+            </form>
         </div>
         <!-- Project disclaimer here-->
         <div class="row educational-purposes text-center pb-5">
