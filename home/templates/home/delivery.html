@@ -33,8 +33,8 @@
             fulfilled.</p>
 
         <h4 class="pt-4 pb-2">Delivery Prices</h4>
-        <p>We offer a flat rate delivery price of €3.99</p>
-        <p>Free Delivery is offered for all orders over €50</p>
+        <p>We offer a percentage delivery fee, calculated on your total order.</p>
+        <p>Free Delivery is offered for all orders over €30</p>
 
         <h4 class="pt-4 pb-2">Delivery Times</h4>
         <p>All orders are processed within 1 to 3 business days (excluding weekends and holidays) after receiving your
@@ -47,13 +47,13 @@
             number you can use to check its status. Please allow 48 hours for the tracking information to become
             available.</p>
         <p>If you haven't received your order within 2 days of receiving your confirmation of postage email, please <a
-                class="text-muted" href="">contact us</a> with your name and order number, and we
+                class="text-muted" href="{% url 'contact' %}">contact us</a> with your name and order number, and we
             will look into it for you.</p>
         <p>You can also keep track of your delivery in your account profile.</p>
 
         <h4 class="pt-4 pb-2">Refunds, returns and exchanges</h4>
         <p>We do not accept returns or exchanges unless the item you purchased is defective.</p>
-        <p>In the event that your order arrives damaged in any way, please <a class="text-muted" href="">contact us</a>
+        <p>In the event that your order arrives damaged in any way, please <a class="text-muted" href="{% url 'contact' %}">contact us</a>
             as soon as possible with your order number and a photo of the
             item's condition. We address these on a case-by-case basis but will try our best to work towards a
             satisfactory solution.</p>
@@ -61,7 +61,7 @@
             charges for all returns must be prepaid and insured by you. You are responsible for any loss or damage to
             hardware during postage. We do not guarantee that we will receive your returned item. Postage and handling
             charges are not refundable. Any amounts refunded will not include the cost of Postage.</p>
-        <p>If you have any further questions, please don't hesitate to <a class="text-muted" href="">contact us.</a></p>
+        <p>If you have any further questions, please don't hesitate to <a class="text-muted" href="{% url 'contact' %}">contact us.</a></p>
 
     </div>
 </div>
