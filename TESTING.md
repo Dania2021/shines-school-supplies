@@ -38,3 +38,22 @@
 
 #### As a shopper, I want to easily view the current purchase amount.
   * The current purchase amount is available under the shopping cart icon in the header, making the information available across the whole website.
+  
+### Epic 2 - Shopping Bag and Checkout
+
+#### As a shopper, I want to view all items currently on my shopping bag and be able to update them.
+  * Products added to the shopping bag are displayed in the shopping bag page.
+
+  * A quantity form is available in the shopping bag page for the shopper to update the product quantity.
+
+#### As a shopper, I want to easily provide my shipping and payment information during the checkout.
+  * A form is available at the checkout for the shopper to provide the necessary information to complete the purchase.
+
+#### As a shopper, I want to feel my personal and payment data is being handled securely.
+  * Stripe payments has been implemented as a payment method for the website in order to provide secure and easy transactions for the shoppers.
+
+#### As a shopper, I want to receive an order confirmation once I have finished my purchase.
+  * A checkout success page is displayed to the shopper after completing the purchase.
+
+#### As a shopper, I want to receive an order confirmation email for my records.
+  * An email is being sent to the email address provided by the shopper during the checkout.  
