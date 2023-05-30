@@ -65,3 +65,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * Content
   * Media
   * Acknowledgments
+  
+## Testing
+
+   The testing documentation can be found [here](TESTING.md)
