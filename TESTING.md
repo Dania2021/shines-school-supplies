@@ -120,6 +120,8 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
 ## Manual Testing
 
+### Navbar
+
 ## Validator Testing
 
 * ### W3C HTML Validator
@@ -131,6 +133,61 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 * ### Python Validation
 
 ## Lighthouse Testing
+
+I have used Googles Lighthouse testing to test the performance, accessibility, best practices and SEO of the site.
+
+### Home page
+
+  ![Home Page](/documentation/testing/lighthouse-desktop-home.png)
+
+### Product page
+
+  ![Product Page](/documentation/testing/lighthouse-desktop-products.png)
+
+### Product Detail page
+
+  ![product Detail Page](/documentation/testing/lighthouse-desktop-product-detail.png)
+
+### Checkout page
+
+  ![Checkout Page](/documentation/testing/lighthouse-desktop-checkout.png)
+
+
+### Checkout Success Page
+
+  ![Checkout Success Page](/documentation/testing/lighthouse-desktop-checkout-success.png)
+
+### Shopping Bag Page
+
+  ![Shopping bag Page](/documentation/testing/lighthouse-desktop-home.png)
+
+### Add Product Page
+
+  ![Add product page](/documentation/testing/lighthouse-desktop-add-product.png)
+
+### Edit Product Page
+
+  ![Edit Product Page](/documentation/testing/lighthouse-desktop-edit-product.png)
+
+### Profil Page
+
+  ![Profile Page](/documentation/testing/lighthouse-desktop-profile.png)
+
+### Contact Page
+
+  ![Contact Page](/documentation/testing/lighthouse-desktop-contact.png)
+
+### Contact Success Page
+
+  ![Contact Success Page](/documentation/testing/lighthouse-desktop-contact-success.png)
+
+### Privacy Page
+
+  ![Privacy Page](/documentation/testing/lighthouse-desktop-privacy.png)
+
+### Delivery Page
+
+  ![Delivery Page](/documentation/testing/lighthouse-desktop-delivery.png)
 
 ## Browser Compatibility Testing
 
