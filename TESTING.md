@@ -185,6 +185,15 @@ Full CRUD functionality has been implemented for site admins to manage the websi
   ![404 Page](/documentation/testing/html-validator-404.png)
 
 * ### W3C CSS Validator
+
+  W3C was used to validate the CSS. All pages now pass with no errors.
+
+ * static/base.css
+ * checkout/static/checkout/css/checkout.css
+ * profiles/static/profiles/css/profile.css
+
+ ![css validator](/documentation/testing/css-validator.png)
+
   
 * ### JSHint JavaScript validator
   
