@@ -120,7 +120,24 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
 ## Manual Testing
 
-### Navbar
+### General
+
+  | Element | Expected Outcome | Result |Pass/Fail |
+  | --- | --- | --- |
+  | Main Logo Link | Clicking the link redirects to the home page | Pass |
+  | Shop Link | Clicking the link redirects to the products page | Pass |
+  | Search Bar | Clicking the link redirects to the products page and display the matching products | Pass |
+  | My Account Icon - Register Link | Clicking the link redirects to the account sign up page | Pass |
+  | My Account Icon - Login Link | Clicking the link redirects to the account sign in page | Pass |
+  | My Account Icon - Logout link | Clicking the link redirects to the account sign out page. | Pass |
+  | My Account Icon - Product Management Link | Clicking the link redirects superuser/admin to the add product page | Pass |
+  | My Account Icon - My Profile Link | Clicking the link redirects to the profile page | Pass |
+  | Shopping Cart Icon | Clicking the link redirects to the shopping cart | Pass |
+  | Facebook Icon | Clicking the link open the business Facebook page on a separate tab | Pass |
+  | Privacy Policy Link | Clicking the link opens the privacy policy page | Pass |
+  | Terms & Condition Link | Clicking the link opens the terms & condition page | Pass |
+  | Delivery Policy Link  | Clicking the link opens the delivery policy page | Pass |
+  | Newsletter Form | Email address gets registered to the database when submitting the form | Pass |
 
 ## Validator Testing
 
@@ -186,7 +203,7 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
 * ### W3C CSS Validator
 
-  W3C was used to validate the CSS. All pages now pass with no errors.
+  [W3C](https://jigsaw.w3.org/css-validator/) was used to validate the CSS. All pages now pass with no errors.
 
    * static/base.css
    * checkout/static/checkout/css/checkout.css
