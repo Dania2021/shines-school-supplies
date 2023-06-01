@@ -126,6 +126,12 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
 * ### W3C HTML Validator
 
+  Home Page
+
+  ![home Page](/documentation/testing/html-validator-home.png)
+
+  Checkout Success Page
+
   ![checkout success Page](/documentation/testing/html-validator-checkout-success.png)
 
   
