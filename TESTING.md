@@ -188,15 +188,32 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
   W3C was used to validate the CSS. All pages now pass with no errors.
 
- * static/base.css
- * checkout/static/checkout/css/checkout.css
- * profiles/static/profiles/css/profile.css
+   * static/base.css
+   * checkout/static/checkout/css/checkout.css
+   * profiles/static/profiles/css/profile.css
 
- ![css validator](/documentation/testing/css-validator.png)
+   ![css validator](/documentation/testing/css-validator.png)
 
-  
 * ### JSHint JavaScript validator
-  
+
+  JS Hint was used to validate the JavaScript. It found a total of 6 warnings concerning missing or unnecessary semicolons. These warnings were corrected.
+
+  * #### Products
+
+   ![product page](/documentation/testing/jshint-products.png)
+
+  * #### Profiles
+
+   ![country field](/documentation/testing/jshint-profiles.png)
+
+  * #### Bag
+
+    ![update quantity & remove item](/documentation/testing/jshint-bag.png)
+
+  * #### Checkout
+
+    ![stripe](/documentation/testing/jshint-checkout.png)   
+
 * ### Python Validation
 
 ## Lighthouse Testing

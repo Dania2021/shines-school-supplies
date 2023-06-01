@@ -125,14 +125,14 @@
 
 {% block postloadjs %}
 {{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
 
 <!-- Back to top button -->
 <script>
     $('.back-to-top-link').click(function (e) {
         window.scrollTo(0, 0);
-    })
+    });
 </script>
-{% include 'products/includes/quantity_input_script.html' %}
 
 <script>
     // Update quantity on change
@@ -152,6 +152,6 @@
          .done(function () {
             location.reload();
         });
-    })
+    });
 </script>
 {% endblock %}
