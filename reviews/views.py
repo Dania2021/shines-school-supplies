@@ -14,7 +14,7 @@ def add_review(request, product_id):
     user_review = Review.objects.filter(
         author=request.user, product=product)
 
-     # if user already submitted a review
+    # if user already submitted a review
     if user_review:
         messages.error(
             request, 'You have already submitted a review for this product')
@@ -30,8 +30,9 @@ def add_review(request, product_id):
 
                 return redirect(reverse('product_detail', args=[product.id]))
             else:
-                messages.error(
-                    request, 'Failed to submit the review. Please ensure the form is valid.')
+                messages.error(request,
+                               'Failed to submit the review. \
+                               Please ensure the form is valid.')
         else:
             form = ReviewForm()
 
@@ -44,7 +45,7 @@ def add_review(request, product_id):
 
     return render(request, template, context)
 
-    
+
 @login_required
 def edit_review(request, review_id):
     """ Display form  Edit a review for a product """
@@ -60,10 +61,12 @@ def edit_review(request, review_id):
             form.save()
             messages.success(request, 'Successfully updated review!')
 
-            return redirect(reverse('product_detail', args=[review.product.id]))
+            return redirect(
+                reverse('product_detail', args=[review.product.id]))
         else:
-            messages.error(
-                request, 'Failed to update your review. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update your review. \
+                           Please ensure the form is valid.')
     else:
         form = ReviewForm(instance=review)
         messages.info(
@@ -92,4 +95,3 @@ def delete_review(request, review_id):
     messages.success(request, 'Your review has been deleted!')
 
     return redirect(reverse('product_detail', args=[review.product.id]))
-

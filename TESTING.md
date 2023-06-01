@@ -216,6 +216,54 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
 * ### Python Validation
 
+  [Code Institute Python Linter](https://pep8ci.herokuapp.com/) was used to validate the python, returned a number of whitespace and indentation errors which were rectified where possible.
+
+  * custom_storages.py
+  * shines_schoolsuplies/settings.py
+  * shines_schoolsupplies/urls.py
+  * shines_schoolsupplies/views.py
+  * home/urls.py
+  * home/views.py
+  * products/admin.py
+  * products/forms.py
+  * products/models.py
+  * products/urls.py
+  * products/views.py
+  * products/widgets.py
+  * bag/contexts.py
+  * bag/urls.py
+  * bag/views.py
+  * bag/templatetags/bag_tools.py
+  * checkout/admin.py
+  * checkout/apps.py
+  * checkout/forms.py
+  * checkout/models.py
+  * checkout/signals.py
+  * checkout/urls.py
+  * checkout/views.py
+  * checkout/webhook_handler.py
+  * checkout/webhooks.py
+  * profiles/forms.py
+  * profiles/models.py
+  * profiles/urls.py
+  * profiles/views.py
+  * reviews/admin.py
+  * reviews/forms.py
+  * reviews/models.py
+  * reviews/urls.py
+  * reviews/views.py
+  * contact/admin.py
+  * contact/forms.py
+  * contact/models.py
+  * contact/urls.py
+  * contact/views.py
+  * newsletter/admin.py
+  * newsletter/contexts.py
+  * newsletter/forms.py
+  * newsletter/models.py
+  * newsletter/urls.py
+  * newsletter/views.py
+
 ## Lighthouse Testing
 
 I have used Googles Lighthouse testing to test the performance, accessibility, best practices and SEO of the site.

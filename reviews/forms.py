@@ -24,15 +24,13 @@ class ReviewForm(forms.ModelForm):
         self.fields['title'].widget.attrs.update(
             {'placeholder': 'Title'})
         self.fields['content'].widget.attrs.update(
-            {'placeholder': 'Content'})    
+            {'placeholder': 'Content'})
 
         self.fields['title'].widget.attrs['autofocus'] = True
         self.fields['title'].widget.attrs['class'] = 'border-black'
         self.fields['content'].widget.attrs['class'] = 'border-black'
         self.fields['title'].label = False
         self.fields['content'].label = False
-
-
 
     rating = forms.ChoiceField(label='How will you rate this product?',
                                choices=RATINGS,
