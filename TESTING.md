@@ -141,10 +141,19 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
 ### Navbar 
 
-| Element | Expected Outcome |Pass/Fail |
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
 | Home Link | Clicking on home link opens the homepage | Pass |
 | View a category of products/filter products | When a user clicks on a category, they are then provided a dropdown with a breakdown of items within the chosen category. If a user choses the view all link, the page will display all items but the user will also be given the choice to refine the products shown via links to the sub-categories at the top of the page | Pass |
 | Sort the list of available products | Users may view products bases on their price, rating or category from the navbar by selecting all products and then the option they want from the dropdown | Pass |
+
+### Products Page
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Sort By Selector | Sort by functionality sort the products depending on the selection | Pass |
+| Product Image | Clicking the image redirect to the product details page for that specific product | Pass |
+| Product Edit Link | When superuser/admin click the link, redirects to the edit product page. | Pass |
+| Product Delete Link | When superuser/admin click the link delete, delete the product from the database | Pass |
 
 ## Validator Testing
 
