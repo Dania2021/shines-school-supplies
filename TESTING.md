@@ -139,6 +139,14 @@ Full CRUD functionality has been implemented for site admins to manage the websi
   | Delivery Policy Link  | Clicking the link opens the delivery policy page | Pass |
   | Newsletter Form | Email address gets registered to the database when submitting the form | Pass |
 
+### Navbar 
+
+| Element | Expected Outcome |Pass/Fail |
+| Home Link | Clicking on home link opens the homepage | Pass |
+| View a category of products/filter products  | When a user clicks on a category, they are then provided a dropdown with a breakdown of items within the chosen category. If a user choses the view all link, the page will display all items but the user will also be given the choice to refine the products shown via links to the sub-categories at the top of the page | Pass |
+| Sort the list of available products | Users may view products bases on their price, rating or category from the navbar by selecting all products and then the option they want from the dropdown | Pass |
+
+
 ## Validator Testing
 
 * ### W3C HTML Validator
