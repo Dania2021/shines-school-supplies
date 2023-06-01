@@ -126,15 +126,64 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
 * ### W3C HTML Validator
 
-  Home Page
+  #### Home Page
 
   ![home Page](/documentation/testing/html-validator-home.png)
 
-  Checkout Success Page
+  #### Privacy Page
+   
+  ![privacy page](/documentation/testing/html-validator-privacy.png)
+
+  #### Delivery Page
+
+  ![delivery page](/documentation/testing/html-validator-delivery.png)
+
+  #### Terms Page
+
+  ![terms page](/documentation/testing/html-validator-term.png)
+
+  #### Product Page
+
+  ![product page](/documentation/testing/html-validator-products.png)
+
+  #### Product Detail Page
+
+  ![product detail page](/documentation/testing/html-validator-product-detail.png)
+
+  #### Add Product Page
+
+  ![add product page](/documentation/testing/html-validator-add-product.png)
+
+  #### Edit Product Page
+
+  ![edit product page](/documentation/testing/html-validator-edit-product.png)
+
+  * The add and edit product page shows two errors. These are because the image upload widget and changing this code breaks the field.
+
+  #### Bag Page
+
+  ![bag page](/documentation/testing/html-validator-bag.png)
+
+  #### Checkout Success Page
 
   ![checkout success Page](/documentation/testing/html-validator-checkout-success.png)
 
-  
+  #### Contact Page
+
+  ![contact page](/documentation/testing/html-validator-contact.png)
+
+  #### Contact Success Page
+
+  ![contact success Page](/documentation/testing/html-validator-contact-success.png)
+
+  #### Profile Page
+
+  ![Profile Page](/documentation/testing/html-validator-profile.png)
+
+  #### 404 page
+
+  ![404 Page](/documentation/testing/html-validator-404.png)
+
 * ### W3C CSS Validator
   
 * ### JSHint JavaScript validator
