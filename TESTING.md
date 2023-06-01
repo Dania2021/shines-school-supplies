@@ -122,7 +122,7 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 
 ### General
 
-  | Element | Expected Outcome | Result |Pass/Fail |
+  | Element | Expected Outcome |Pass/Fail |
   | --- | --- | --- |
   | Main Logo Link | Clicking the link redirects to the home page | Pass |
   | Shop Link | Clicking the link redirects to the products page | Pass |
