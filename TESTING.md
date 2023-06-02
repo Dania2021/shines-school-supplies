@@ -188,6 +188,16 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 | Edit Product Form | Product gets updated when submitting the form | Pass |
 | Cancel Button | Clicking the button redirects to the products page | Pass |
 
+### Shopping Bag Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Decrease Quantity Button | Decreases the quantity on the input form | Pass |
+| Increase Quantity Button | Increases the quantity on the input form | Pass |
+| Update Link | Clicking the link update the product quantity on the shopping bag | Pass |
+| Delete Link | Clicking the link removed the product from the shopping bag | Pass |
+| Keep Shopping Button | Clicking the button redirects to the products page | Pass |
+| Secure Checkout Button | Clicking the button redirects to the checkout page | Pass |
 
 ## Validator Testing
 
