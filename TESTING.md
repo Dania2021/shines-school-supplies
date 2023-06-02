@@ -128,6 +128,7 @@ Full CRUD functionality has been implemented for site admins to manage the websi
   | Shop Link | Clicking the link redirects to the products page | Pass |
   | Search Bar | Clicking the link redirects to the products page and display the matching products | Pass |
   | My Account Icon - Register Link | Clicking the link redirects to the account sign up page | Pass |
+  | Receive an email to verify my registration | Users receive an email asking them to click the link in the email to verify their email address and complete the registration process | Pass |
   | My Account Icon - Login Link | Clicking the link redirects to the account sign in page | Pass |
   | My Account Icon - Logout link | Clicking the link redirects to the account sign out page. | Pass |
   | My Account Icon - Product Management Link | Clicking the link redirects superuser/admin to the add product page | Pass |
