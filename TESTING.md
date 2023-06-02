@@ -172,6 +172,22 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 | Review Delete Link | Clicking the link, delete the review from the database | Pass |
 | View review and rating for products | If the product has recieved any reviews it's displayed underneath the image on the product detail page | Pass |
 
+### Add Product Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Select Image Button | Clicking the button allows to add an image to the form | Pass |
+| Add Product Form | Product gets registered to the database when submitting the form | Pass |
+| Cancel Button | Clicking the button redirects to the products page | Pass |
+
+### Edit Product Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Select Image Button | Clicking the button allows to add or replace the image | Pass |
+| Edit Product Form | Product gets updated when submitting the form | Pass |
+| Cancel Button | Clicking the button redirects to the products page | Pass |
+
 
 ## Validator Testing
 
