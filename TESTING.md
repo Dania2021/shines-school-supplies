@@ -219,6 +219,30 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 | --- | --- | --- |
 | View an order confirmation after checkout | Users are taking to an order confirmation page once they have successfully checked out which provides them with their order information, delivery information & billing information | Pass |
 | Receive an email confirmation after checking out | After successful checkout, a user will be sent a confirmation email to the email address provided at checkout to confirm their order | Pass |
+| Continue Shopping Link | Clicking the button redirects to the products page | Pass |
+
+### Profile Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Update Information Form | User's information gets updated when submitting the form | Pass |
+| View previous orders made from my account | the order summary is displayed of previous confirmed orders	 | Pass |
+| Order Link | Clicking the link redirects to order view | Pass |
+
+### Add Review Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Add Review Form | Review gets registered to the database when submitting the form | Pass |
+| Cancel Button | Clicking the button redirects to the product details page | Pass |
+
+### Edit Review Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Edit Review Form | Review gets updated when submitting the form | Pass |
+| Cancel Button | Clicking the button redirects to the product details page | Pass |
+
 
 ## Validator Testing
 
