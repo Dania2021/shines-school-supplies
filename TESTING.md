@@ -243,6 +243,20 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 | Edit Review Form | Review gets updated when submitting the form | Pass |
 | Cancel Button | Clicking the button redirects to the product details page | Pass |
 
+### Contact Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Form Validation | If the user doesn't fill in the required fields and tries to submit the form, they will be shown a tooltip letting them know they need to fill in the required fields | Pass |
+| Send contact form Button | Clicking the button redirects to the contact success page | Pass |
+| Back To Shop Link | Clicking the link redirects to the products page | Pass |
+
+### Contact Success Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| After submitting contact form | displays thank you message  letting user know enquiry was sent successfully  | Pass |
+| View Products Link | Clicking the link redirects to the products page | Pass |
 
 ## Validator Testing
 
