@@ -148,12 +148,30 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 | Sort the list of available products | Users may view products bases on their price, rating or category from the navbar by selecting all products and then the option they want from the dropdown | Pass |
 
 ### Products Page
+
 | Element | Expected Outcome | Pass/Fail |
 | --- | --- | --- |
 | Sort By Selector | Sort by functionality sort the products depending on the selection | Pass |
 | Product Image | Clicking the image redirect to the product details page for that specific product | Pass |
 | Product Edit Link | When superuser/admin click the link, redirects to the edit product page. | Pass |
 | Product Delete Link | When superuser/admin click the link delete, delete the product from the database | Pass |
+
+### Product Detail Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Product Image | Clicking the image opens it on a separate tab | Pass |
+| Product Edit Link | When superuser/admin click the link, redirects to the edit product page | Pass |
+| Product Delete Link | When superuser/admin click the link delete, delete the product from the database | Pass |
+| Decrease Quantity Button | Decreases the quantity on the input form | Pass |
+| Increase Quantity Button | Increases the quantity on the input form | Pass |
+| Keep Shopping Button | Clicking the button redirects to the products page | Pass |
+| Add To Cart Button | Clicking the button adds the specified quantity of the product to the shopping bag | Pass |
+| Leave a Review Link | Clicking the button redirects to the add review page | Pass |
+| Review Edit Link | Clicking the link redirects to the edit review page | Pass |
+| Review Delete Link | Clicking the link, delete the review from the database | Pass |
+| View review and rating for products | If the product has recieved any reviews it's displayed underneath the image on the product detail page | Pass |
+
 
 ## Validator Testing
 

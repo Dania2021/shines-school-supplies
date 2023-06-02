@@ -16,3 +16,4 @@ class SubscriberForm(forms.ModelForm):
         self.fields['email'].label = False
         self.fields['email'].widget.attrs['placeholder'] = 'Email address'
         self.fields['email'].widget.attrs['class'] = 'border-black'
+        self.fields['email'].widget.attrs['id'] = 'email_newsletter'
