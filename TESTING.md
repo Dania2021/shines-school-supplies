@@ -133,11 +133,14 @@ Full CRUD functionality has been implemented for site admins to manage the websi
   | My Account Icon - Product Management Link | Clicking the link redirects superuser/admin to the add product page | Pass |
   | My Account Icon - My Profile Link | Clicking the link redirects to the profile page | Pass |
   | Shopping Cart Icon | Clicking the link redirects to the shopping cart | Pass |
+  | View Shopping Cart Icon | The value adds the correct amount for each product added, and includes the delivery fee if the free delivery limit has not been reached | Pass |
   | Facebook Icon | Clicking the link open the business Facebook page on a separate tab | Pass |
   | Privacy Policy Link | Clicking the link opens the privacy policy page | Pass |
   | Terms & Condition Link | Clicking the link opens the terms & condition page | Pass |
   | Delivery Policy Link  | Clicking the link opens the delivery policy page | Pass |
   | Newsletter Form | Email address gets registered to the database when submitting the form | Pass |
+  | Dania Khanam Link | Takes the user to my Github Profile in a new browser tab | Pass |
+  
 
 ### Navbar 
 
@@ -198,6 +201,24 @@ Full CRUD functionality has been implemented for site admins to manage the websi
 | Delete Link | Clicking the link removed the product from the shopping bag | Pass |
 | Keep Shopping Button | Clicking the button redirects to the products page | Pass |
 | Secure Checkout Button | Clicking the button redirects to the checkout page | Pass |
+
+### Checkout Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| Checkout Form | An order gets created when submitted the form | Pass |
+| Login Link | Clicking the link redirects to the account sign in page | Pass |
+| Create an Account Link | Clicking the link redirects to the account sign up page | Pass |
+| Save Information Check | 	Checking the box update the user's profile information during the checkout process | Pass |
+| Complete Checkout Button | Clicking the button redirects to the checkout success page | Pass |
+| Adjust Bag Link | Clicking the link redirects to shopping bag page | Pass |
+
+### Checkout Success Page
+
+| Element | Expected Outcome | Pass/Fail |
+| --- | --- | --- |
+| View an order confirmation after checkout | Users are taking to an order confirmation page once they have successfully checked out which provides them with their order information, delivery information & billing information | Pass |
+| Receive an email confirmation after checking out | After successful checkout, a user will be sent a confirmation email to the email address provided at checkout to confirm their order | Pass |
 
 ## Validator Testing
 
