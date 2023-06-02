@@ -12,10 +12,10 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
 
 ## Table Of Contents
 
-* User Experience (UX)
-  * Strategy
-    * Project Goals
-    * User Goals
+* [User Experience (UX)](#user-expeienceux)
+  * [Strategy](#strategy)
+    * [Project Goals](#project-goals)
+    * [User Goals](#user-goals)
   * Scope
     * User Stories
   * Structure
@@ -66,6 +66,68 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * Media
   * Acknowledgments
   
+## User Expeience(UX)
+
+### Strategy
+
+  * #### Project goals
+
+    * Shines School Supplies is a Business to Consumer (B2C) e-commerce site.
+
+    * The sites primary audience will be student and people who love art and craft. It will cater to a range of supplies and selling a range of items over different price points.
+
+    * Structure is easy to understand and navigates effortlessly for an easy shopping experience.
+
+    * Customers are offered the opportunity to register an account.
+
+    * Easy shopping process to create a pleaseant experince for the customer.
+
+  * #### User Goals
+
+    ##### Epic 1 - Shopping Experience  
+
+     * As a shopper, I want to view products on a specific category.
+     * As a shopper, I want to be able to sort the products depending on their price, rating or category.
+     * As a shopper, I want to be able to search for products using specific keywords.
+     * As a shopper, I want to easily find the products and their details.
+     * As a shopper, I want to easily select the quantity of products to be purchased.
+     * As a shopper, I want to easily view the current purchase amount.
+    
+    ##### Epic 2 - User Accounts
+
+    * As a shopper, I want to be able to register an account to keep my records and interact with the website.
+    * As a shopper, I want to receive a confirmation once my account has been registered to make sure the information entered was correctly.
+    * As a registered shopper, I want to easily log in and out from my account.
+    * As a registered shopper, I want to have a personalized profile page where I can keep my contact information updated and see my past orders.
+
+    ##### Epic 3 - Shopping Bag and Checkout
+
+     * As a shopper, I want to view all items currently on my shopping bag and be able to update them.
+     * As a shopper, I want to feel my personal and payment data is being handled securely.
+     * As a shopper, I want to easily provide my shipping and payment information during the checkout.
+     * As a shopper, I want to receive an order confirmation once I have finished my purchase.
+     * As a shopper, I want to receive an order confirmation email for my records.
+
+    ##### Epic 4 - Product Admin
+
+     * As a site admin, I want to be able to add and update products.
+     * As a site admin, I want to be able to remove product no longer available.
+
+   ##### Epic 5 - Product Reviews
+
+     * As a shopper, I want to be able to read product reviews left by other shoppers.
+     * As a registered shopper, I want to be able to leave product reviews and rate the products.
+     * As a registered shopper, I want to update my review.
+     * As a registered shopper, I want to delete my review.
+
+  ##### Epic 6 - Newsletter Subscription
+   
+     * As a site admin, I want shoppers to be able to provide their contact information to be able to reach out to them with information and offers.
+
+  ##### Epic 7 - Contact
+
+    * As a shopper, I can see an option to contact the owner of the site for inquiries.
+       
 ## Testing
 
    The testing documentation can be found [here](TESTING.md)

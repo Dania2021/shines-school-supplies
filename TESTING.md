@@ -104,7 +104,7 @@
 
 * Full CRUD functionality has been implemented for site admins to manage the website products.
 * As a site admin, I want to be able to remove product no longer available.
-Full CRUD functionality has been implemented for site admins to manage the website products.
+* Full CRUD functionality has been implemented for site admins to manage the website products.
 
 ### Epic 6 - Newsletter Subscription
 
