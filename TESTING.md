@@ -466,4 +466,30 @@ I have used Googles Lighthouse testing to test the performance, accessibility, b
 
 * ### Resolved Bugs
 
+  1. The error is showing in the navbar links on the main-nav page, easily gets fixed by updating & sign in the drop-down-item with &amp; sign as suggested by the html validator.
+
+   ![Error Page](/documentation/error/error.png)
+
+  2. Error is showing in loading spinner on the checkout page, easily gets fixed by updating h1 element with p element.
+
+    ![Error Page](/documentation/error/error-img1.png)
+
+  3. One more error is showing in custom-widget-template as p element is not allowed as the child of strong element, gets fixed by replacing strong element.
+
+   ![Error Page](/documentation/error/error-img.png)
+
+  4. Duplicate id error is showing in the quantity form of bag page of remove item, gets fixed by updating the id of remove-item from class name.
+
+   ![Remove item Error Page](/documentation/error/remove-item-error.png)
+
+  5. In the confirm-email page of allauth email address of the user is not displaying. This was caused because of the extra space in user_display variable, gets fixed by deleting that extra space.
+
+  6. Error is showing in the table of the checkout page that table row has less column count, to fix this error I have added product price column in the row to make the column count equal.
+   
+   ![table Error Page](/documentation/error/error-img2.png)
+
 * ### Unresolved Bugs
+
+  Duplicate id error is showing on the checkout page because div id of email on form for checkout and newsletter are the same. This issue has not yet been tackled due to time constrains as it does not affect the overall functionality.
+
+  ![unresolved error](/documentation/error/unresolved-error.png)
