@@ -113,21 +113,35 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
      * As a site admin, I want to be able to add and update products.
      * As a site admin, I want to be able to remove product no longer available.
 
-   ##### Epic 5 - Product Reviews
+    ##### Epic 5 - Product Reviews
 
      * As a shopper, I want to be able to read product reviews left by other shoppers.
      * As a registered shopper, I want to be able to leave product reviews and rate the products.
      * As a registered shopper, I want to update my review.
      * As a registered shopper, I want to delete my review.
 
-  ##### Epic 6 - Newsletter Subscription
+    ##### Epic 6 - Newsletter Subscription
    
      * As a site admin, I want shoppers to be able to provide their contact information to be able to reach out to them with information and offers.
 
-  ##### Epic 7 - Contact
+    ##### Epic 7 - Contact
 
-    * As a shopper, I can see an option to contact the owner of the site for inquiries.
+     * As a shopper, I can see an option to contact the owner of the site for inquiries.
        
+### Scope
+
+    The plan for this project was carried out using the Agile Methodology in Github. User Stories were created using issues on git hub. Each user story explicitly explains the purpose of the issues. Each user story is segmented into acceptance criteria and tasks. It was prioritised using GitHub labels with different colors.
+
+    7 Epics were created which were then further developed into 30 User Stories. Each story was assigned a classification of Must-Have, Should-Have or Could-Have. Each story was also assigned user story points, based on my best estimation for the time/difficulty of completing each story.
+
+  #### User Story
+   
+    Using a Kanban board helped to focus on specific tasks and track the project progress.
+
+    ![user story](/documentation/readme/kanban-board-image.png)
+
+    ![user story](/documentation/readme/user-story.png)
+
 ## Testing
 
    The testing documentation can be found [here](TESTING.md)
