@@ -16,18 +16,19 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Strategy](#strategy)
     * [Project Goals](#project-goals)
     * [User Goals](#user-goals)
-  * Scope
-    * User Stories
-  * Structure
+  * [Scope](#scope)
+    * [User Stories](#user-stories)
+  * [Structure](#structure)
     * Database Schema
   * Skeleton
     * Wireframes
   * Surface
     * Color Schema
     * Typography
-* Marketing
-  * Search Engine Optimisation
-  * Business Model
+* [Marketing](#marketing)
+  * [Search Engine Optimisation](#search-engine-optimisation)
+  * [xml-sitemap](#xml-sitemap)
+  * [Business Model](#business-model)
 * Features
   * General
   * Home Page
@@ -138,9 +139,63 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
    
     Using a Kanban board helped to focus on specific tasks and track the project progress.
 
-    ![user story](/documentation/readme/kanban-board-image.png)
+     ![user story](/documentation/readme/kanban-board-image.png)
 
-    ![user story](/documentation/readme/user-story.png)
+     ![user story](/documentation/readme/user-story.png)
+
+## Marketing
+
+  ### Search Engine Optimisation
+
+  To improve the search index rating on Google, research was carried out using a number of tools, such as [Wordtracker](https://www.wordtracker.com/) to search for relevant keywords to use in meta tags in the project head element.
+
+  Search terms such as school supplies and art & craft were used to return popular keywords. A number of short and long tail keywords were then selected and inputted into the head element of base.html.
+
+  The selected keywords are:
+
+  * art
+  * craft
+  * art & craft
+  * stationary
+  * school
+  * school supplies
+  * back to school
+  * classroom
+  * activity
+  * educational
+  * coloring
+
+  These keywords remain a work in progress however. As is normal practise, in production these keywords would be monitored via, for example, Google Analytics, to determine which terms are driving traffic to the site.
+
+  These terms could then be added to, or removed as deemed necessary, and with continual improvement and refinement of these over time should utlimately assist in the site ranking higher on Google.
+
+  ### XML Sitemap
+
+   Additionally to help the search engines crawl the website, I've added an XML sitemap file to the main root directory. The file was created using the free service through XML-Sitemaps.com. A sitemap is a way of organizing a website, identifying the URLs and the data under each section. Previously, the sitemaps were primarily geared for the users of the website. However, Google's XML format was designed for the search engines, allowing them to find the data faster and more efficiently.
+
+   A robots.txt file has also be included in the build to tell the search engine crawlers which URLs the crawler can access on this site. This is used mainly to avoid overloading the site with requests.
+
+  ### Business Model
+
+   Shines School Suuplies is a B2C company that offer our school supplies products. Selling directly to consumers means that the site is designed to sell quickly, on impulse, and in smaller quantities aswell as cater to people who may wish to commission a piece. While wholesale is a possible future goal, the website was not yet intended to sell to other businesses. For this reason, a large amount of the functionality is focused on the user experience and the ability to purchase products quickly and effectively.
+
+   Our thought consumers are school students and people who love art & craft.
+
+  #### Marketing Strategy
+
+  Due to our small marketing budget, we have decided to start a Facebook Business page and interact with our customers and bigger organizations. For our buying customers we have made it easy to sign up for our newsletter, in order to make them even more loyal and facilitate for them to share tips and products with their friends and family. There is an image of the Facebook page below and a link to the page [here](https://www.facebook.com/profile.php?id=100092700921305).
+  
+  The use of paid ads allows the business to target specific demographics and increase brand awareness. 
+
+  Influencers are a great way to increase brand awareness. Free samples could be sent to popular influencers on youtube in exchange for a mention/hashtag/ link in the description. This further helps raise brand awareness because the video could be posted on Facebook and the influencer tagged in the post, which with the help of the Facebook algorithm, would help bring an organic audience to the Facebook page and, hopefully, the store.
+
+  #### Facebook Business page
+
+   ![facebook mockup page](/documentation/readme/fb-mock-img1.png)
+
+   ![facebook mockup page](/documentation/readme/fb-mock-img2.png)
+
+   ![facebook mockup page](/documentation/readme/fb-mock-img3.png)
 
 ## Testing
 
