@@ -35,9 +35,9 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Products Page](#products-page)
   * [Product Details Page](#product-details-page)
   * [Product Admin](#product-admin)
-  * Shopping Bag Page
-  * Checkout Page
-  * Checkout Success Page
+  * [Shopping Bag Page](#shopping-bag-page)
+  * [Checkout Page](#checkout-page)
+  * [Checkout Success Page](#checkout-success-page)
   * Profile Page
   * Reviews Page
   * Contact Page
@@ -285,6 +285,40 @@ The plan for this project was carried out using the Agile Methodology in Github.
   ![shopping bag](/documentation/readme/shopping-bag.png)
 
   ![shopping bag](/documentation/readme/shopping-bag-img.png)
+
+### Checkout Page
+
+  The checkout page is broken into two sections, a delivery information section and an order summary section.The delivery information section provides inputs for the user to enter their name, email and phone number, a delivery section contains inputs for the address and a dropdown to select their country. If the user is logged in and has filled out their profile, information from the profile will be pre-populated in this form, for a faster checkout experience. The user is also given a checkbox at the bottom of the delivery information which allows them to save the information they have input in their profile for future use.
+
+  If a user is not signed during checkout, instead of the checkbox, they will be given the options to either create an account or login if they already have one. This is optional - as users can checkout as a guest, however this means that they will not be able to view their previous orders on the site.
+
+  The last section is the payment information section. Payments are processed by Stripe and to facilitate payment, a user needs to input their card details into the payment box. If the details are invalid a warning will be displayed under the payment box giving the user feedback on what the error was.
+
+  Beneath the payment section are an adjust bag button which takes the user back to their bag and a complete order button which processes their payment. Underneath the buttons the user is reminded that their card will be charged the grand total amount.
+
+  The order summary section contains an image, name, quantity and subtotal for each item in the bag, along with an order total, delivery fee and the grand total.
+
+  ![checkout](/documentation/readme/checkout.png)
+
+  ![checkout](/documentation/readme/checkout-img.png)
+
+  When a user clicks the complete order button, a checkout payment overlay is displayed which shows a loading spinner which gives the user feedback that their payment is being processed.
+
+  If there is an error with the delivery information form the user will be taken back to the checkout page and they will be shown an error toast informing them there was a problem with their information and to try again.
+
+### Checkout Success Page
+
+ If the payment is successful the user will then be shown the checkout success page. This lists a summary of their order and lets the user know that an email confirmation has also been sent to the email address shown on the page.
+
+ A button at the bottom of the page allows the user to continue shopping. Users are also show a success toast to let them know that their order has been placed successfully, giving them their order number and confirming an email will be sent to their email address.
+
+ ![checkout success page](/documentation/readme/checkout-success.png)
+
+ ![checkout success page](/documentation/readme/checkout-success-img.png)
+
+#### Order Confirmation Email
+
+  ![order confirmation email](/documentation/readme/order-confirmation-email.png)
 
 ## Testing
 
