@@ -644,19 +644,25 @@ The plan for this project was carried out using the Agile Methodology in Github.
    1. Go to Amazon Web Service website and click on Create An AWS Account, or login if you already have an account.
    2. Login to your new account, go to AWS Management Console and find service S3. Click on Create Bucket.
 
-     * Give it a name (I recommend naming your bucket to match the Heroku app name), and choose region 
-       closest to you.
-     * In Object Ownership section, choose ACLS enabled. and Bucket Owner Preffered.
-     * Uncheck box 'Block All Public Access'.
-     * Check box 'I acknowledge that the current settings might result in this bucket and the objects 
-       within becoming public.'
-     * Click on Create Bucket, and your bucket is created.
+       * Give it a name (I recommend naming your bucket to match the Heroku app name), and choose region 
+         closest to you.
+     
+       * In Object Ownership section, choose ACLS enabled. and Bucket Owner Preffered.
+     
+       * Uncheck box 'Block All Public Access'.
+       
+       * Check box 'I acknowledge that the current settings might result in this bucket and the objects 
+         within becoming public.'
+     
+       * Click on Create Bucket, and your bucket is created.
+   
    3. Click on your newly created bucket, and navigate to the Properties tab. Scroll down to the bottom until you find Static Website Hosting. Click on Edit, then enable.
       
-      * Hosting type: choose Host a Static Website
-      * Index document: index.html
-      * Error document: error.html
-      * Click on Save Changes.
+       * Hosting type: choose Host a Static Website
+       * Index document: index.html
+       * Error document: error.html
+       * Click on Save Changes.
+   
    4. Navigate to the Permissions tab. Scroll down to the bottom until you find Cross-origin resource sharing (CORS). Click on Edit, and paste in this Cors Configuration below, which is going to set up the required access between the Heroku app and this S3 bucket. Click on Save Changes.
 
         [
@@ -674,27 +680,33 @@ The plan for this project was carried out using the Agile Methodology in Github.
           }
         ]
 
-   Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
+    Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
 
-   * Select Type of Policy: choose S3 Bucket Policy
-   * Effect: choose Allow
-   * Principal: *
-   * Actions: select GetObject
-   * Fill in the Amazon Resource Name (ARN), from the Bucket ARN back in the Bucket Policy
-   * Click on the Add Statement and then Generate Policy. Copy the policy and paste in the bucket policy 
+     * Select Type of Policy: choose S3 Bucket Policy
+   
+     * Effect: choose Allow
+     
+     * Principal: *
+     
+     * Actions: select GetObject
+     
+     * Fill in the Amazon Resource Name (ARN), from the Bucket ARN back in the Bucket Policy
+     
+     * Click on the Add Statement and then Generate Policy. Copy the policy and paste in the bucket policy 
      editor.
-   * Add a slash star on to the end of the resource key (because we want to allow access to all    resources in this bucket). Click Save. The resource key should look like this 
+     
+     * Add a slash star on to the end of the resource key (because we want to allow access to all    resources in this bucket). Click Save. The resource key should look like this 
 
-     "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*", 
+       "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*", 
 
-   Still on Permissions tab, go to Access Control List (ACL) section, click Edit and enable List for Everyone (public access), and accept the warning box.
+     Still on Permissions tab, go to Access Control List (ACL) section, click Edit and enable List for Everyone (public access), and accept the warning box.
 
   5. With the bucket ready, now we need to create a user to access it through another service called IAM which stands for Identity and Access Management. Go back to the service menu and open IAM.
 
-   a. Create a group for our user to live in.
-      Click User Groups, and then create a new group with a name you want. I gave the group the name: manage-shoes-and-more. Scroll down to the bottom and click on Create Group. 
+     a. Create a group for our user to live in.
+         Click User Groups, and then create a new group with a name you want. I gave the group the name: manage-shoes-and-more. Scroll down to the bottom and click on Create Group. 
 
-   b. Create an access policy giving the group access to the S3 bucket that has been created.
+     b. Create an access policy giving the group access to the S3 bucket that has been created.
       
       * Click on Policy, and then Create Policy. Go to the JSON tab, and then select import managed policy, which will let us import one that AWS has pre-built for full access to S3. Search for S3, then import the AmazonS3FullAccess policy.
       
@@ -762,15 +774,15 @@ The plan for this project was carried out using the Agile Methodology in Github.
          STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
          MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-    Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
+      Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
 
-    | Variables | Keys |
-    | --- | --- |
-    | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
-    | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
-    | USE_AWS | True |
+       | Variables | Keys |
+       | --- | --- |
+       | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
+       | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
+       | USE_AWS | True |
 
-     Also remove the COLLECTSTATIC variable from the Config Vars.
+       Also remove the COLLECTSTATIC variable from the Config Vars.
  
   4. We then want to tell Django that in production we want to use S3 to store our static files whenever someone runs collectstatic, and that we sent any uploaded images to go there as well.
   Create a custom_storages.py file in your project's root directory, and inside it, include the Static and Media Storage locations:
@@ -801,6 +813,13 @@ The plan for this project was carried out using the Agile Methodology in Github.
 ### Code Used
 
   The code in Code Institute's video on the Boutique Ado project was used as the main reference point to set up an e-commerce / online store project using HTML, CSS, JS, Python+Django, ElephantSQL database, Stripe, and AWS S3 as storage.
+
+### Content
+
+  The content for this project is taken from
+
+   * [ABC School Supplies](https://www.abcschoolsupplies.ie/?gclid=Cj0KCQjw7PCjBhDwARIsANo7CglAGDpgxipgGP4vQhznS5fJmmvWQO3lgKysP8uecmONKUUevo0AQx4aAn2xEALw_wcB)
+   * [Eason](https://www.easons.com/?gclid=Cj0KCQjw7PCjBhDwARIsANo7CgmTR5Eo5h_35IJIcsUwndJb-WElKtQP1eJPuv0NyhHpghPuLXG5EPgaAkcPEALw_wcB)
 
 ### Media
 
