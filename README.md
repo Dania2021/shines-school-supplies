@@ -34,7 +34,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Home Page](#home-page)
   * [Products Page](#products-page)
   * [Product Details Page](#product-details-page)
-  * Products Admin
+  * [Product Admin](#product-admin)
   * Shopping Bag Page
   * Checkout Page
   * Checkout Success Page
@@ -248,6 +248,34 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
   ![product detail page](/documentation/readme/product-detail-page2.png)
 
+### Product Admin
+
+#### Add Product
+
+  Superusers are also able to add a product directly from the site via the product management link in the account icon dropdown menu. This will provide them with a form to complete for all the various information required to create a product. If a required field is not filled in, the superuser will be shown a tooltip asking them to fill in the required fields. The superuser is shown two buttons at the bottom of the form, one to cancel, which if selected returns the superuser to the products page and an add product button. Once a superuser creates a new item and clicks the add product button they will be shown a success toast letting them know that the product was successfully created, and they will be shown that products product detail page.
+
+  If a regular user tries to view the add product page, defensive programming is in place so that they will be shown an error toast that informs them only administrators have the permissions to perform that activity.
+
+  ![add product page](/documentation/readme/add-product.png)
+
+  ![add product page](/documentation/readme/add-product-img.png)
+
+#### Edit Product
+
+  Superusers are able to edit products directly from the site by clicking the edit button on the products page, or on the product detail page. This will open up the edit product page which will be pre-populated with the products current information. The superuser is given buttons to go back or to update the product. Upon update, they will be shown the product detail page for that product, and a success toast will show letting them know the product they updated was successful.
+
+  If a regular user tries to view the edit product page, defensive programming is in place so that they will be shown an error toast that informs them only administrators have the permissions to perform the activity.
+
+  ![edit product page](/documentation/readme/edit-product.png)
+
+  ![edit product page](/documentation/readme/edit-product-img.png)
+
+#### Delete Product
+
+  If a superuser clicks the delete link, either on the product page or from the product detail page that product gets deleted from the database and the superuser redirected to the products page.
+
+  Regular users trying to manually access the url for product deletion will be shown an error toast informing them that only an administrator has the permissions to perform the task. Users that are not logged into an account will be redirected to the sign in page.
+  
 ## Testing
 
    The testing documentation can be found [here](TESTING.md)
