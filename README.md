@@ -696,31 +696,32 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
    b. Create an access policy giving the group access to the S3 bucket that has been created.
       
-      * Click on Policy, and then Create Policy. Go to the JSON tab, and then select import managed policy, which will let us import one that AWS has pre-built for full access to S3. Search for S3, then import the AmazonS3FullAccess policy.
+       * Click on Policy, and then Create Policy. Go to the JSON tab, and then select import managed policy, which will let us import one that AWS has pre-built for full access to S3. Search for S3, then import the AmazonS3FullAccess policy.
       
-      * Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
-      "Resource": [
-         "arn:aws:s3:::YOUR_BUCKET_NAME",
-         "arn:aws:s3:::YOUR_BUCKET_NAME/*"
-       ]
+       * Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
+       
+          "Resource": [
+             "arn:aws:s3:::YOUR_BUCKET_NAME",
+             "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+           ]
 
-      Now click on Next:Tags, then click Next:Review.
+       Now click on Next:Tags, then click Next:Review.
 
-      * Give the review policy a name and a description, then click Create Policy. The policy has now been created.
+       * Give the review policy a name and a description, then click Create Policy. The policy has now been created.
 
     c. Finally, assign the user to the group so it can use the policy to access all our files.
 
-       * Go to User Groups, and select the group. Go to the Permissions tab, open the Add Permissions dropdown, and click Attach Policies.
+      * Go to User Groups, and select the group. Go to the Permissions tab, open the Add Permissions dropdown, and click Attach Policies.
 
-       * Select the policy and click Add permissions at the bottom.
+      * Select the policy and click Add permissions at the bottom.
        
-       * Create a user to put in the group, by going to the Users page, and clicking Add Users.
+      * Create a user to put in the group, by going to the Users page, and clicking Add Users.
        
-       * Set a user name, give them access type: Programmatic access, and then click Next: Permissions.
+      * Set a user name, give them access type: Programmatic access, and then click Next: Permissions.
        
-       * Check on the group that has the policy attached. Click Next: Tags, then click Next: Review, and lastly Create User.
+      * Check on the group that has the policy attached. Click Next: Tags, then click Next: Review, and lastly Create User.
        
-       * Download the csv file and save it.     
+      * Download the csv file and save it.     
 
 ### Connect Django to AWS Bucket
 
@@ -761,29 +762,29 @@ The plan for this project was carried out using the Agile Methodology in Github.
          STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
          MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-     Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Convig Vars. Set this variables:
+     Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
 
-       | Variables | Keys |
-       | --- | --- |
-       | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
-       | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
-       | USE_AWS | True |
+    | Variables | Keys |
+    | --- | --- |
+    | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
+    | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
+    | USE_AWS | True |
 
      Also remove the COLLECTSTATIC variable from the Config Vars.
  
   4. We then want to tell Django that in production we want to use S3 to store our static files whenever someone runs collectstatic, and that we sent any uploaded images to go there as well.
   Create a custom_storages.py file in your project's root directory, and inside it, include the Static and Media Storage locations:
 
-       from django.conf import settings
-       from storages.backends.s3boto3 import S3Boto3Storage
+    from django.conf import settings
+    from storages.backends.s3boto3 import S3Boto3Storage
 
   
-       class StaticStorage(S3Boto3Storage):
-          location = settings.STATICFILES_LOCATION
+    class StaticStorage(S3Boto3Storage):
+       location = settings.STATICFILES_LOCATION
 
 
-       class MediaStorage(S3Boto3Storage):
-          location = settings.MEDIAFILES_LOCATION
+    class MediaStorage(S3Boto3Storage):
+       location = settings.MEDIAFILES_LOCATION
 
   5. Finally, push these changes on Github.
 
@@ -796,6 +797,10 @@ The plan for this project was carried out using the Agile Methodology in Github.
    The testing documentation can be found [here](TESTING.md)
 
 ## Credits
+
+### Media
+
+  Photos used in this project taken from [Pexels](https://www.pexels.com/) and [unsplash](https://unsplash.com/)
 
 ### Acknowledgments
 
