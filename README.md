@@ -12,7 +12,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
 
 ## Table Of Contents
 
-* [User Experience (UX)](#user-expeienceux)
+* [User Experience (UX)](#user-experienceux)
   * [Strategy](#strategy)
     * [Project Goals](#project-goals)
     * [User Goals](#user-goals)
@@ -29,8 +29,8 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Search Engine Optimisation](#search-engine-optimisation)
   * [xml-sitemap](#xml-sitemap)
   * [Business Model](#business-model)
-* Features
-  * General
+* [Features](#features)
+  * [General Features](#general-features)
   * Home Page
   * Products Page
   * Product Details Page
@@ -67,7 +67,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * Media
   * Acknowledgments
   
-## User Expeience(UX)
+## User Experience(UX)
 
 ### Strategy
 
@@ -131,17 +131,17 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
        
 ### Scope
 
-    The plan for this project was carried out using the Agile Methodology in Github. User Stories were created using issues on git hub. Each user story explicitly explains the purpose of the issues. Each user story is segmented into acceptance criteria and tasks. It was prioritised using GitHub labels with different colors.
+The plan for this project was carried out using the Agile Methodology in Github. User Stories were created using issues on git hub. Each user story explicitly explains the purpose of the issues. Each user story is segmented into acceptance criteria and tasks. It was prioritised using GitHub labels with different colors.
 
-    7 Epics were created which were then further developed into 30 User Stories. Each story was assigned a classification of Must-Have, Should-Have or Could-Have. Each story was also assigned user story points, based on my best estimation for the time/difficulty of completing each story.
+7 Epics were created which were then further developed into 30 User Stories. Each story was assigned a classification of Must-Have, Should-Have or Could-Have. Each story was also assigned user story points, based on my best estimation for the time/difficulty of completing each story.
 
-  #### User Story
+  #### User Stories
    
-    Using a Kanban board helped to focus on specific tasks and track the project progress.
+   Using a Kanban board helped to focus on specific tasks and track the project progress.
 
-     ![user story](/documentation/readme/kanban-board-image.png)
+    ![user story](/documentation/readme/kanban-board-image.png)
 
-     ![user story](/documentation/readme/user-story.png)
+    ![user story](/documentation/readme/user-story.png)
 
 ## Marketing
 
@@ -191,11 +191,32 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
 
   #### Facebook Business page
 
-   ![facebook mockup page](/documentation/readme/fb-mock-img1.png)
+   ![facebook mockup page](/documentation/readme/fb-img1.png)
 
-   ![facebook mockup page](/documentation/readme/fb-mock-img2.png)
+   ![facebook mockup page](/documentation/readme/fb-img2.png)
 
-   ![facebook mockup page](/documentation/readme/fb-mock-img3.png)
+## Features
+
+### General Features
+
+  The website has been designed from a mobile first perspective. Each page of the site shares the following:
+
+  * #### Navbar
+
+   The navbar on the site is split into two sections, the first section contains the main logo, search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens.
+
+  The Categories links in the navbar have a transition that moves the category name up when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
+
+
+    ![navbar](/documentation/readme/navbar-image.png)
+
+  * #### Footer
+
+   The footer is broken into 4 distinct sections - a section that contains section contains contact information for the site, such as a link to the contact form, and social media links. The second information about the site, such as terms and conditions and policies. The third section contains a newsletter registration form for shopper to subscribe across the whole website. The final section is a disclaimer to let users know this site was created as an educational product and to remind users that no orders will be processed. The footer is fully responsive, and on small screens stacks the sections.
+
+    ![footer](/documentation/readme/footer.png)
+
+     
 
 ## Testing
 
