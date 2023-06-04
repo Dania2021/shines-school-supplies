@@ -46,14 +46,14 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Terms Page](#terms-page)
   * [Delivery Page](#delivery-page)
   * [404 Error Page](#404-page)
-* Technologies Used
-  * Languages Used
-  * Libraries and Frameworks
-  * Packages / Dependencies Installed
-  * Database Management
-  * Payment Service
-  * Cloud Storage
-  * Tools and Programs
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#technologies-used)
+  * [Libraries and Frameworks](#libraries-and-frameworks)
+  * [Packages / Dependencies Installed](#packages--dependencies-installed)
+  * [Database Management](#database-management)
+  * [Payment Service](#payment-service)
+  * [Cloud Storage](#cloud-storage)
+  * [Tools and Programs](#tools-and-programs)
 * Deployment
   * How To Use This Project
   * Deployment to Heroku
@@ -386,7 +386,8 @@ The plan for this project was carried out using the Agile Methodology in Github.
 #### Signout Page
 
   Allow the registered user to sign out from their account.
-  [signout page](/documentation/readme/logout.png)	
+  
+  ![signout page](/documentation/readme/logout.png)	
 
 ### Privacy Page 
 
@@ -400,13 +401,63 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
   The delivery policy sets out information for a delivery policy for the shop.
 
-
-
 ### 404 Page
 
    The 404 error page is shown if the page a user is trying to access cannot be found (for example the user enters an incorrect product id in the product url.) Users are asked to use the navigation menu to try again.
 
    ![404 page](/documentation/readme/404.png)
+
+## Technologies Used
+
+### Languages Used
+
+    HTML, CSS, JavaScript, Python
+
+### Libraries and Frameworks
+
+  * [Django](https://www.djangoproject.com/) was used as web framework.
+  * [Django Template](https://jinja.palletsprojects.com/en/3.1.x/) was used as a templating language for Django to display backend data to HTML.
+  * [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) was used throughout the website to help with styling and responsiveness.
+  * [Google Fonts](https://fonts.google.com/) was used to import the font into the html file, and were used on all parts of the site.
+  * [Font Awesome](https://fontawesome.com/) was used throughout the website to add icons for aesthetic and UX purposes.
+  * [jQuery](https://jquery.com/) Version 3.6.2 A JavaScript Framework
+
+### Packages / Dependencies Installed
+
+  * [Django Allauth](https://django-allauth.readthedocs.io/en/latest/) was used for user authentication, registration, and account management.
+  * [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/) was used to control the rendering of the forms.
+  * [Django Countries](https://pypi.org/project/django-countries/) was used to provide country choices for use with forms and a country field for models.
+  * [Pillow](https://pypi.org/project/Pillow/) was used to add image processing capabilities.
+  * [Gunicorn](https://gunicorn.org/) was used as Python WSGI HTTP Server for UNIX to support the deployment of Django application.
+  * [dj_databsae_url](https://pypi.org/project/dj-database-url/) allows us to utilise the DATABASE_URL variable.
+  * [psycopg2](https://pypi.org/project/psycopg2/) - a postgres database adapter which allow us to connect with a postgres database.
+  * [Django-storages](https://django-storages.readthedocs.io/en/latest/) - a storage backend library
+  * [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) - Allows connection to AWS S3 bucket.
+    
+### Database Management
+
+  * sqlite3 for development.
+  * [ElephantSQL](https://www.elephantsql.com/) for deployment.
+
+### Payment Service
+
+  [Stripe](https://stripe.com/en-ie) was used to process all online payments transactions.
+
+### Cloud Storage
+
+  [Amazon Web Service S3](https://aws.amazon.com/s3/) was used to store all static and media files in production.
+
+### Tools and Programs
+
+  * [Git](https://git-scm.com/) - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+  * [GitPod](https://gitpod.io/workspaces) - GitPod was used for writing code, committing, and then pushing to GitHub.
+  * [GitHub](https://github.com/) - GitHub was used to store the projects code after being pushed from Git.
+  * [Heroku](https://id.heroku.com/login) - Heroku was used to deploy the website.
+  * [Favicon.io](https://favicon.io/) - To create the favicon.
+  * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+  * [dbdiagram.io](https://dbdiagram.io/home) - Used to create the database schema.
+  * [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Chrome DevTools was used during development process for code review and to test responsiveness.
+  * [Tiny PNG](https://tinypng.com/) - To compress images 
 
 ## Testing
 
