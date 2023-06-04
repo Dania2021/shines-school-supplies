@@ -33,7 +33,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [General Features](#general-features)
   * [Home Page](#home-page)
   * [Products Page](#products-page)
-  * Product Details Page
+  * [Product Details Page](#product-details-page)
   * Products Admin
   * Shopping Bag Page
   * Checkout Page
@@ -135,13 +135,13 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
 7 Epics were created which were then further developed into 30 User Stories. Each story was assigned a classification of Must-Have, Should-Have or Could-Have. Each story was also assigned user story points, based on my best estimation for the time/difficulty of completing each story.
 
-  #### User Stories
+#### User Stories
    
-   Using a Kanban board helped to focus on specific tasks and track the project progress.
+  Using a Kanban board helped to focus on specific tasks and track the project progress.
 
-      ![user story](/documentation/readme/kanban-board-image.png)
+  ![user story](/documentation/readme/kanban-board-image.png)
 
-      ![user story](/documentation/readme/user-story.png)
+  ![user story](/documentation/readme/user-story.png)
 
 ## Marketing
 
@@ -225,12 +225,28 @@ The plan for this project was carried out using the Agile Methodology in Github.
 ### Products Page
 
   The Products page displays the products showing an image (if one is not available a default no image filler image is inserted), the products name, sku, description, price, category and rating. If the user is a superuser there will also be an update and delete link on the right of the product information for ease of editing and deleting products.
-
+  
   At the top left of the products page you will be able to see the number of items on the page, and if you are viewing a category, there will be a link to allow you to easily view all products. If you have performed a search, you will also be shown the search term used here.
 
   On the top right hand side of the page is a sort by dropdown. This enables the user to sort price and rating in ascending/descending order, and name and category in alphabetical order A-Z or Z-A.
 
   ![products page](/documentation/readme/products-page.png)
+
+### Product Details Page
+
+  The product detail page gives more details about the chosen item. An image of the product is displayed on the left of medium and large screens, and at the top of small screens.
+
+  To the right on medium and large screens (underneath the image on small screens) is the Product information. The name is displayed followed by the price, category and rating. The description for the product follows and underneath the rating, if the user is a superuser, they will find a set of edit and delete buttons for the product for ease of admin.
+
+  A quantity selector comes next, with plus and minus buttons and a quantity input which allows the user to input their value. The minus quantity button is disabled when the value is 1, and is enabled above this. The plus button is enabled until it reaches 99, and then becomes disabled.
+
+  Users are shown two buttons underneath the quantity selector, one to add the product to the bag cart, and one to go back to the product page. If the user selects the add to cart button, they will be shown a success toast letting them know the product was added to the bag, and then they will be given a quick overview of the items in their bag together with their quantities, the total price excluding delivery, if they have not reached the free delivery threshold they will be given an amount they need to spend to get the free delivery and a button to go to the checkout.
+
+  All reviews the product has received are being displayed on the reviews section at the bottom of the page. A link to leave a review is available at the bottom of the reviews, provide edit and delete link for the logged in user's own reviews.
+
+  ![product detail page](/documentation/readme/product-detail-page.png)
+
+  ![product detail page](/documentation/readme/product-detail-page2.png)
 
 ## Testing
 
