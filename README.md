@@ -32,7 +32,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
 * [Features](#features)
   * [General Features](#general-features)
   * [Home Page](#home-page)
-  * Products Page
+  * [Products Page](#products-page)
   * Product Details Page
   * Products Admin
   * Shopping Bag Page
@@ -60,7 +60,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * Deployment to Heroku
   * AWS Bucket Creation
   * Connect Django to AWS Bucket
-* Testing
+* [Testing](#testing)
 * Credits
   * Code Used
   * Content
@@ -205,22 +205,32 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
    The navbar on the site is split into two sections, the first section contains the main logo, search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens.
 
-  The Categories links in the navbar when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
+   The Categories links in the navbar when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
 
 
-     ![navbar](/documentation/readme/navbar-image.png)
+   ![navbar](/documentation/readme/navbar-image.png)
 
   * #### Footer
 
-   The footer is broken into 4 distinct sections - a section that contains section contains contact information for the site, such as a link to the contact form, and social media links. The second information about the site, such as terms and conditions and policies. The third section contains a newsletter registration form for shopper to subscribe across the whole website. The final section is a disclaimer to let users know this site was created as an educational product and to remind users that no orders will be processed. The footer is fully responsive, and on small screens stacks the sections.
+    The footer is broken into 4 distinct sections - a section that contains section contains contact information for the site, such as a link to the contact form, and social media links. The second information about the site, such as terms and conditions and policies. The third section contains a newsletter registration form for shopper to subscribe across the whole website. The final section is a disclaimer to let users know this site was created as an educational product and to remind users that no orders will be processed. The footer is fully responsive, and on small screens stacks the sections.
 
-     ![footer](/documentation/readme/footer.png)
+   ![footer](/documentation/readme/footer.png)
 
 ### Home Page
 
   The home page contains background image, a mesage and shop now button. The button for "Shop now" brings the user to the product page.
 
-    ![home page](/documentation/readme/home-page.png)
+  ![home page](/documentation/readme/home-page.png)
+
+### Products Page
+
+  The Products page displays the products showing an image (if one is not available a default no image filler image is inserted), the products name, sku, description, price, category and rating. If the user is a superuser there will also be an update and delete link on the right of the product information for ease of editing and deleting products.
+
+  At the top left of the products page you will be able to see the number of items on the page, and if you are viewing a category, there will be a link to allow you to easily view all products. If you have performed a search, you will also be shown the search term used here.
+
+  On the top right hand side of the page is a sort by dropdown. This enables the user to sort price and rating in ascending/descending order, and name and category in alphabetical order A-Z or Z-A.
+
+  ![products page](/documentation/readme/products-page.png)
 
 ## Testing
 
