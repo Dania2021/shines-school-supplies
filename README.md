@@ -38,8 +38,8 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Shopping Bag Page](#shopping-bag-page)
   * [Checkout Page](#checkout-page)
   * [Checkout Success Page](#checkout-success-page)
-  * Profile Page
-  * Reviews Page
+  * [Profile Page](#profile-page)
+  * [Reviews Page](#reviews-page)
   * Contact Page
   * Newsletter
   * Accounts Pages
@@ -319,6 +319,44 @@ The plan for this project was carried out using the Agile Methodology in Github.
 #### Order Confirmation Email
 
   ![order confirmation email](/documentation/readme/order-confirmation-email.png)
+
+### Profile Page
+
+ The profile page is broken into two sections, one for the default delivery information and the second for the order history.
+
+ The default delivery information comprises of the name, address & phone number for the user. The user can update their profile by clicking the update information button and the page will reload with the new information pre-populated in the relevant fields together with a success toast that gives the user feedback that their information has been saved successfully. This saved information will then be used in the checkout to pre-populate the payment form to speed up the checkout process for registered users.
+
+ The order history section contains all the previous orders created by the user. These list the first part of the order number, the date the order was made, the items purchased and the order total. If a user would like to look at an order in more detail they can click on the order number and they will be taken to the checkout success page that lists their order summary, together with an alert toast which informs the user they are looking at a previous order.
+
+ ![profile page](/documentation/readme/profile.png)
+
+ ![profile page](/documentation/readme/profile-img.png)
+
+### Reviews Page
+
+#### Add Review Page
+
+  The add review page provide a form for the registered user to be able to add review to the product. This page has two buttons, one is cancel button and the other is add product button.
+
+  ![add review page](/documentation/readme/add-review.png)
+
+  ![add review page](/documentation/readme/add-review-img.png)
+
+  ![profile page](/documentation/readme/profile-img.png)
+
+#### Edit Review Page
+
+  The edit review page provide a prefilled form for the registered user to be able to update their existing reviews.
+
+  ![edit review page](/documentation/readme/edit-review.png)
+
+  ![edit review page](/documentation/readme/edit-review-img.png)
+
+  ![profile page](/documentation/readme/profile-img.png)
+
+#### Delete Review  
+
+  If a registered user clicks the delete link, on the product detail page that review gets deleted from the database and the user redirected to the product detail page.
 
 ## Testing
 
