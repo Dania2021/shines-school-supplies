@@ -40,13 +40,12 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Checkout Success Page](#checkout-success-page)
   * [Profile Page](#profile-page)
   * [Reviews Page](#reviews-page)
-  * Contact Page
-  * Newsletter
+  * [Contact Page](#contact-page)
   * Accounts Pages
   * Privacy Page
   * Terms Page
   * Delivery Page
-  * 404 Error Page
+  * [404 Error Page](#404-page)
 * Technologies Used
   * Languages Used
   * Libraries and Frameworks
@@ -357,6 +356,20 @@ The plan for this project was carried out using the Agile Methodology in Github.
 #### Delete Review  
 
   If a registered user clicks the delete link, on the product detail page that review gets deleted from the database and the user redirected to the product detail page.
+
+### Contact Page
+
+  The contact page gives users an easy way to communicate with the shop, without leaving the site. The form has required fields of name, email and message and an optional field of phone number. Underneath the form the user is given 2 buttons, a back button and a submit form button. The back to shop button takes the user to the products page. If a user is signed in to their account, the contact form will pre-populate the name, email and phone number fields from the users profile if they have been filled in. This prevents a user having to fill out a form that where we already hold the information, which speeds up the process for the user and is good practice.
+
+  ![contact page](/documentation/readme/contact.png)
+
+  ![profile page](/documentation/readme/profile-img.png)
+
+### 404 Page
+
+   The 404 error page is shown if the page a user is trying to access cannot be found (for example the user enters an incorrect product id in the product url.) Users are asked to use the navigation menu to try again.
+
+   ![404 page](/documentation/readme/404.png)
 
 ## Testing
 
