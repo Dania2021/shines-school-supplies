@@ -365,6 +365,20 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
   ![profile page](/documentation/readme/profile-img.png)
 
+### Privacy Page 
+
+  The privacy policy page contains a privacy policy created for an e-commerce shop created on the rocket lawyer site. As this project is purely for educational purposes, the privacy policy is not legally binding as Shines School Supplies is not a real shop.
+
+### Terms Page
+
+  The terms and conditions page lists a set of terms and conditions created on the rocket lawyer site for an e-commerce store. As this project is purely for educational purposes, no terms or conditions are legally binding as Shines School Supplies is not a real shop.
+
+### Delivery Page
+
+  The delivery policy sets out information for a delivery policy for the shop.
+
+
+
 ### 404 Page
 
    The 404 error page is shown if the page a user is trying to access cannot be found (for example the user enters an incorrect product id in the product url.) Users are asked to use the navigation menu to try again.
