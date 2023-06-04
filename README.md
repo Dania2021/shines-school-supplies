@@ -22,9 +22,9 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
     * [Database Schema](#database-schema)
   * Skeleton
     * Wireframes
-  * Surface
-    * Color Schema
-    * Typography
+  * [Surface](#surface)
+    * [Color Schema](#color-schema)
+    * [Typography](#typography)
 * [Marketing](#marketing)
   * [Search Engine Optimisation](#search-engine-optimisation)
   * [xml-sitemap](#xml-sitemap)
@@ -153,7 +153,14 @@ The plan for this project was carried out using the Agile Methodology in Github.
 ### Surface
 
 ### Color Schema
+ 
+  * Mostly white and black colour was used in this website.
+  * #00827F was used for delivery banner
+  * #706563 was used when links hovered.
+  * red and green are used for edit and delete link
 
+   ![colour palette](/documentation/readme/color-palette.png)
+   
 ### Typography 
 
   The font used across the site is Oswald an Lato. It was used in different weights.
@@ -684,20 +691,20 @@ The plan for this project was carried out using the Agile Methodology in Github.
    
    4. Navigate to the Permissions tab. Scroll down to the bottom until you find Cross-origin resource sharing (CORS). Click on Edit, and paste in this Cors Configuration below, which is going to set up the required access between the Heroku app and this S3 bucket. Click on Save Changes.
 
-      [
-        {
-          "AllowedHeaders": [
-          "Authorization"
-          ],
-          "AllowedMethods": [
-            "GET"
-          ],
-          "AllowedOrigins": [
-            "*"
-          ],
-          "ExposeHeaders": []
-        }
-      ]
+       [
+          {
+            "AllowedHeaders": [
+            "Authorization"
+            ],
+            "AllowedMethods": [
+              "GET"
+            ],
+            "AllowedOrigins": [
+              "*"
+            ],
+            "ExposeHeaders": []
+          }
+       ]
 
       Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
 
@@ -730,10 +737,10 @@ The plan for this project was carried out using the Agile Methodology in Github.
       
       * Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
        
-      "Resource": [
-         "arn:aws:s3:::YOUR_BUCKET_NAME",
-         "arn:aws:s3:::YOUR_BUCKET_NAME/*"
-      ]
+        "Resource": [
+           "arn:aws:s3:::YOUR_BUCKET_NAME",
+           "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+        ]
 
        Now click on Next:Tags, then click Next:Review.
 
