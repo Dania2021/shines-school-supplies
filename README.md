@@ -60,11 +60,11 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [AWS Bucket Creation](#aws-bucket-creation)
   * [Connect Django to AWS Bucket](#connect-django-to-aws-bucket)
 * [Testing](#testing)
-* Credits
-  * Code Used
-  * Content
-  * Media
-  * Acknowledgments
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
   
 ## User Experience(UX)
 
@@ -680,24 +680,23 @@ The plan for this project was carried out using the Agile Methodology in Github.
           }
         ]
 
-    Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
+      Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
 
-     * Select Type of Policy: choose S3 Bucket Policy
+       * Select Type of Policy: choose S3 Bucket Policy
    
-     * Effect: choose Allow
+       * Effect: choose Allow
      
-     * Principal: *
+       * Principal: *
      
-     * Actions: select GetObject
+       * Actions: select GetObject
      
-     * Fill in the Amazon Resource Name (ARN), from the Bucket ARN back in the Bucket Policy
+       * Fill in the Amazon Resource Name (ARN), from the Bucket ARN back in the Bucket Policy
      
-     * Click on the Add Statement and then Generate Policy. Copy the policy and paste in the bucket policy 
-     editor.
+       * Click on the Add Statement and then Generate Policy. Copy the policy and paste in the bucket policy editor.
      
-     * Add a slash star on to the end of the resource key (because we want to allow access to all    resources in this bucket). Click Save. The resource key should look like this 
+       * Add a slash star on to the end of the resource key (because we want to allow access to all    resources in this bucket). Click Save. The resource key should look like this 
 
-       "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*", 
+         "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*", 
 
      Still on Permissions tab, go to Access Control List (ACL) section, click Edit and enable List for Everyone (public access), and accept the warning box.
 
@@ -723,17 +722,17 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
     c. Finally, assign the user to the group so it can use the policy to access all our files.
 
-      * Go to User Groups, and select the group. Go to the Permissions tab, open the Add Permissions dropdown, and click Attach Policies.
+       * Go to User Groups, and select the group. Go to the Permissions tab, open the Add Permissions dropdown, and click Attach Policies.
 
-      * Select the policy and click Add permissions at the bottom.
+       * Select the policy and click Add permissions at the bottom.
        
-      * Create a user to put in the group, by going to the Users page, and clicking Add Users.
+       * Create a user to put in the group, by going to the Users page, and clicking Add Users.
        
-      * Set a user name, give them access type: Programmatic access, and then click Next: Permissions.
+       * Set a user name, give them access type: Programmatic access, and then click Next: Permissions.
        
-      * Check on the group that has the policy attached. Click Next: Tags, then click Next: Review, and lastly Create User.
+       * Check on the group that has the policy attached. Click Next: Tags, then click Next: Review, and lastly Create User.
        
-      * Download the csv file and save it.     
+       * Download the csv file and save it.     
 
 ### Connect Django to AWS Bucket
 
@@ -774,15 +773,15 @@ The plan for this project was carried out using the Agile Methodology in Github.
          STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
          MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-      Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
+    Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
 
-       | Variables | Keys |
-       | --- | --- |
-       | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
-       | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
-       | USE_AWS | True |
+    | Variables | Keys |
+    | --- | --- |
+    | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
+    | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
+    | USE_AWS | True |
 
-       Also remove the COLLECTSTATIC variable from the Config Vars.
+    Also remove the COLLECTSTATIC variable from the Config Vars.
  
   4. We then want to tell Django that in production we want to use S3 to store our static files whenever someone runs collectstatic, and that we sent any uploaded images to go there as well.
   Create a custom_storages.py file in your project's root directory, and inside it, include the Static and Media Storage locations:
