@@ -41,10 +41,10 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Profile Page](#profile-page)
   * [Reviews Page](#reviews-page)
   * [Contact Page](#contact-page)
-  * Accounts Pages
-  * Privacy Page
-  * Terms Page
-  * Delivery Page
+  * [Accounts Pages](#accounts)
+  * [Privacy Page](#privacy-page)
+  * [Terms Page](#terms-page)
+  * [Delivery Page](#delivery-page)
   * [404 Error Page](#404-page)
 * Technologies Used
   * Languages Used
@@ -364,6 +364,29 @@ The plan for this project was carried out using the Agile Methodology in Github.
   ![contact page](/documentation/readme/contact.png)
 
   ![profile page](/documentation/readme/profile-img.png)
+
+### Accounts
+
+#### Signup Page
+
+  Allow the user to sign up an account for the website.
+
+  ![signup page](/documentation/readme/signup-page.png)
+
+  After signing up verfication email send to their email address.
+
+  ![confirmation email](/documentation/readme/email-verification.png)
+
+#### SignIn Page
+
+  Allow the registered user to sign in with their account.
+
+  ![signin page](/documentation/readme/login.png)
+
+#### Signout Page
+
+  Allow the registered user to sign out from their account.
+  [signout page](/documentation/readme/logout.png)	
 
 ### Privacy Page 
 
