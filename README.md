@@ -696,9 +696,9 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
    b. Create an access policy giving the group access to the S3 bucket that has been created.
       
-       * Click on Policy, and then Create Policy. Go to the JSON tab, and then select import managed policy, which will let us import one that AWS has pre-built for full access to S3. Search for S3, then import the AmazonS3FullAccess policy.
+      * Click on Policy, and then Create Policy. Go to the JSON tab, and then select import managed policy, which will let us import one that AWS has pre-built for full access to S3. Search for S3, then import the AmazonS3FullAccess policy.
       
-       * Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
+      * Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
        
           "Resource": [
              "arn:aws:s3:::YOUR_BUCKET_NAME",
@@ -707,7 +707,7 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
        Now click on Next:Tags, then click Next:Review.
 
-       * Give the review policy a name and a description, then click Create Policy. The policy has now been created.
+      * Give the review policy a name and a description, then click Create Policy. The policy has now been created.
 
     c. Finally, assign the user to the group so it can use the policy to access all our files.
 
@@ -762,7 +762,7 @@ The plan for this project was carried out using the Agile Methodology in Github.
          STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
          MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-     Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
+    Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
 
     | Variables | Keys |
     | --- | --- |
@@ -788,15 +788,19 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
   5. Finally, push these changes on Github.
 
-       git add .
-       git commit -m "Your commit message"
-       git push
+    git add .
+    git commit -m "Your commit message"
+    git push
 
 ## Testing
 
    The testing documentation can be found [here](TESTING.md)
 
 ## Credits
+
+### Code Used
+
+  The code in Code Institute's video on the Boutique Ado project was used as the main reference point to set up an e-commerce / online store project using HTML, CSS, JS, Python+Django, ElephantSQL database, Stripe, and AWS S3 as storage.
 
 ### Media
 
