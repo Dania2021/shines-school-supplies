@@ -19,7 +19,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Scope](#scope)
     * [User Stories](#user-stories)
   * [Structure](#structure)
-    * Database Schema
+    * [Database Schema](#database-schema)
   * Skeleton
     * Wireframes
   * Surface
@@ -141,6 +141,14 @@ The plan for this project was carried out using the Agile Methodology in Github.
   ![user story](/documentation/readme/kanban-board-image.png)
 
   ![user story](/documentation/readme/user-story.png)
+
+### Structure
+
+#### Database Schema
+
+  The database model has been designed using [dbdiagram.io](https://dbdiagram.io/home).
+
+  ![er diagram](/documentation/readme/erd-img.png) 
 
 ## Marketing
 
@@ -711,16 +719,16 @@ The plan for this project was carried out using the Agile Methodology in Github.
       
       * Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
        
-          "Resource": [
-             "arn:aws:s3:::YOUR_BUCKET_NAME",
-             "arn:aws:s3:::YOUR_BUCKET_NAME/*"
-           ]
+        "Resource": [
+            "arn:aws:s3:::YOUR_BUCKET_NAME",
+            "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+        ]
 
        Now click on Next:Tags, then click Next:Review.
 
       * Give the review policy a name and a description, then click Create Policy. The policy has now been created.
 
-    c. Finally, assign the user to the group so it can use the policy to access all our files.
+     c. Finally, assign the user to the group so it can use the policy to access all our files.
 
        * Go to User Groups, and select the group. Go to the Permissions tab, open the Add Permissions dropdown, and click Attach Policies.
 
@@ -773,13 +781,13 @@ The plan for this project was carried out using the Agile Methodology in Github.
          STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
          MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-    Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
+   Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
 
-    | Variables | Keys |
-    | --- | --- |
-    | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
-    | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
-    | USE_AWS | True |
+     | Variables | Keys |
+     | --- | --- |
+     | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
+     | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
+     | USE_AWS | True |
 
     Also remove the COLLECTSTATIC variable from the Config Vars.
  
