@@ -708,25 +708,25 @@ The plan for this project was carried out using the Agile Methodology in Github.
       }
     ]
 
-      Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
+   Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
 
-       * Select Type of Policy: choose S3 Bucket Policy
+    * Select Type of Policy: choose S3 Bucket Policy
    
-       * Effect: choose Allow
+    * Effect: choose Allow
      
-       * Principal: *
+    * Principal: *
      
-       * Actions: select GetObject
+    * Actions: select GetObject
      
-       * Fill in the Amazon Resource Name (ARN), from the Bucket ARN back in the Bucket Policy
+    * Fill in the Amazon Resource Name (ARN), from the Bucket ARN back in the Bucket Policy
      
-       * Click on the Add Statement and then Generate Policy. Copy the policy and paste in the bucket policy editor.
+    * Click on the Add Statement and then Generate Policy. Copy the policy and paste in the bucket policy editor.
      
-       * Add a slash star on to the end of the resource key (because we want to allow access to all    resources in this bucket). Click Save. The resource key should look like this 
+    * Add a slash star on to the end of the resource key (because we want to allow access to all    resources in this bucket). Click Save. The resource key should look like this 
 
          "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*", 
 
-     Still on Permissions tab, go to Access Control List (ACL) section, click Edit and enable List for Everyone (public access), and accept the warning box.
+    Still on Permissions tab, go to Access Control List (ACL) section, click Edit and enable List for Everyone (public access), and accept the warning box.
 
   5. With the bucket ready, now we need to create a user to access it through another service called IAM which stands for Identity and Access Management. Go back to the service menu and open IAM.
 
@@ -739,10 +739,10 @@ The plan for this project was carried out using the Agile Methodology in Github.
       
       * Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
        
-      "Resource": [
-         "arn:aws:s3:::YOUR_BUCKET_NAME",
-          "arn:aws:s3:::YOUR_BUCKET_NAME/*"
-      ]
+         "Resource": [
+            "arn:aws:s3:::YOUR_BUCKET_NAME",
+            "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+         ]
 
        Now click on Next:Tags, then click Next:Review.
 

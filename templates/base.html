@@ -73,6 +73,7 @@
                     </h2>
                 </a>
             </div>
+            <!--Search Bar-->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
@@ -113,6 +114,7 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Shopping bag -->
                     <li class="list-inline-item">
                         <a class="{% if grand_total %} text-info font-weight-bold {% else %} text-black {% endif %} nav-link"
                             href="{% url 'view_bag' %}">

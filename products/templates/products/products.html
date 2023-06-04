@@ -45,6 +45,8 @@
                         </select>
                     </div>
                 </div>
+
+                <!-- No of products in category -->
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
@@ -86,6 +88,8 @@
                                         </a>
                                     </p>
                                     {% endif %}
+
+                                    <!-- Product Rating -->
                                     {% if product.rating %}
                                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
                                         5</small>
@@ -105,6 +109,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- set the columns depending on no of items -->
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>

@@ -28,23 +28,24 @@
         </div>
         <!--Newsletter section-->
         <div class="col-sm-3 pb-5">
-            <h4 class="col-pb-3">Join our Newsletter</h4>
-        <form method="POST" action="{% url 'newsletter' %}" id="newsletter-form" class="text-muted form mb-5"
-            enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ subscriber_form | crispy }}
-                <div class="mt-3">
-                    <button class="btn btn-black rounded-0" type="submit">Subscribe!</button>
-                </div>
-            </form>
-        </div>
+               <h4 class="col-pb-3">Join our Newsletter</h4>
+               <form method="POST" action="{% url 'newsletter' %}" id="newsletter-form" class="text-muted form mb-5"
+                  enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ subscriber_form | crispy }}
+                    <div class="mt-3">
+                         <button class="btn btn-black rounded-0" type="submit">Subscribe!</button>
+                     </div>
+               </form>
+         </div>
         <!-- Project disclaimer here-->
         <div class="row educational-purposes text-center pb-5">
             <div class="col">
                 <p>Shines School Supplies has been created by <a href="https://github.com/dania2021"
                         target="_blank">Dania Khanam</a>
                     as a portfolio project for the Code Institutes. As this site has been created for educational
-                    purposes, no orders received will be fulfilled.</p>
+                    purposes, no orders received will be fulfilled.
+                </p>
             </div>
         </div>
     </div>

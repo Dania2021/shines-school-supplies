@@ -32,13 +32,14 @@
             <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
             {% endif %}
         </div>
+
         <div class="col-6 col-md-3 mb-3">
             <p>{{ product.name }}</p>
             <p>{{ product.description }}</p>
         </div>
     </div>
 
-    <!-- Review form -->
+    <!--Add Review form -->
     <div class="row">
         <div class="col-12 col-md-6 mb-3">
             <form method="POST" action="{% url 'add_review' product.id %}" class="text-muted form mb-5"

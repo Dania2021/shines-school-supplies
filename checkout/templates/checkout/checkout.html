@@ -25,6 +25,7 @@
         </div>
     </div>
      
+    <!--Order Summary-->
     <div class="row">
         <div class="col-12 col-lg-6 order-lg-last mb-5">
             <p class="text-muted">Order Summary ({{ product_count }})</p>
@@ -70,6 +71,8 @@
                 </div>
             </div>
         </div>
+
+        <!--Checkout Form-->
         <div class="col-12 col-lg-6">
             <p class="text-muted">Please fill out the form below to complete your order</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -113,6 +116,7 @@
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
                 
+                <!--Submit & back buttons-->
                 <div class="submit-button text-right mt-5 mb-2">
                     <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
                         <span class="icon">
@@ -133,7 +137,7 @@
                         <span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                 </div>
-                </form>
+            </form>
         </div>    
     </div>
 </div>
