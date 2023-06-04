@@ -150,6 +150,17 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
   ![er diagram](/documentation/readme/erd-img.png) 
 
+### Surface
+
+### Color Schema
+
+### Typography 
+
+  The font used across the site is Oswald an Lato. It was used in different weights.
+
+  After some research on popular ecommerce business fonts. We decided to go with Oswald and Lato for its simplicity, which makes it easy to read but at the same time being attention-grabbing.
+
+
 ## Marketing
 
   ### Search Engine Optimisation
@@ -673,20 +684,20 @@ The plan for this project was carried out using the Agile Methodology in Github.
    
    4. Navigate to the Permissions tab. Scroll down to the bottom until you find Cross-origin resource sharing (CORS). Click on Edit, and paste in this Cors Configuration below, which is going to set up the required access between the Heroku app and this S3 bucket. Click on Save Changes.
 
-        [
-          {
-             "AllowedHeaders": [
-             "Authorization"
-             ],
-             "AllowedMethods": [
-                "GET"
-             ],
-             "AllowedOrigins": [
-                "*"
-             ],
-             "ExposeHeaders": []
-          }
-        ]
+      [
+        {
+          "AllowedHeaders": [
+          "Authorization"
+          ],
+          "AllowedMethods": [
+            "GET"
+          ],
+          "AllowedOrigins": [
+            "*"
+          ],
+          "ExposeHeaders": []
+        }
+      ]
 
       Still on the Permissions tab, find Bucket policy, click on Edit, and then go to Policy Generator.
 
@@ -719,10 +730,10 @@ The plan for this project was carried out using the Agile Methodology in Github.
       
       * Because we only want to allow full access to our new bucket and everything within it, paste the bucket ARN (from the bucket policy page in s3) in the JSON editor.
        
-        "Resource": [
-            "arn:aws:s3:::YOUR_BUCKET_NAME",
-            "arn:aws:s3:::YOUR_BUCKET_NAME/*"
-        ]
+      "Resource": [
+         "arn:aws:s3:::YOUR_BUCKET_NAME",
+         "arn:aws:s3:::YOUR_BUCKET_NAME/*"
+      ]
 
        Now click on Next:Tags, then click Next:Review.
 
@@ -783,13 +794,13 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
    Set the Config Vars on Heroku. On your app's dashboard on Heroku, go to Settings and click Reveal Config Vars. Set this variables:
 
-     | Variables | Keys |
-     | --- | --- |
-     | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
-     | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
-     | USE_AWS | True |
+  | Variables | Keys |
+  | --- | --- |
+  | AWS_ACCESS_KEY_ID | your access key id from the csv file that you've downloaded before |
+  | AWS_SECRET_ACCESS_KEY | your secret access key from the csv file that you've downloaded before |
+  | USE_AWS | True |
 
-    Also remove the COLLECTSTATIC variable from the Config Vars.
+  Also remove the COLLECTSTATIC variable from the Config Vars.
  
   4. We then want to tell Django that in production we want to use S3 to store our static files whenever someone runs collectstatic, and that we sent any uploaded images to go there as well.
   Create a custom_storages.py file in your project's root directory, and inside it, include the Static and Media Storage locations:
