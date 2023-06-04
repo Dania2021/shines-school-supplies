@@ -275,7 +275,17 @@ The plan for this project was carried out using the Agile Methodology in Github.
   If a superuser clicks the delete link, either on the product page or from the product detail page that product gets deleted from the database and the superuser redirected to the products page.
 
   Regular users trying to manually access the url for product deletion will be shown an error toast informing them that only an administrator has the permissions to perform the task. Users that are not logged into an account will be redirected to the sign in page.
-  
+
+### Shopping Bag page
+
+  The bag page lists all items the user has added to their bag. It displays an image of the item, the product name & sku, the price of the item and the quantity selected and the subtotal for that item. Users are able to adjust the quantity of the item in the bag here, as well as delete the item from their bag.
+
+  At the bottom the user is shown their bag total, the delivery fee and then a grand total. If the user hasn't reached the free delivery threshold, a small piece of text will highlight to the user that they only need to spend the amount shown to get free delivery. Underneath the totals are a keep shopping button and a secure checkout button.
+
+  ![shopping bag](/documentation/readme/shopping-bag.png)
+
+  ![shopping bag](/documentation/readme/shopping-bag-img.png)
+
 ## Testing
 
    The testing documentation can be found [here](TESTING.md)
