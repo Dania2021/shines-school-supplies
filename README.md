@@ -31,7 +31,7 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
   * [Business Model](#business-model)
 * [Features](#features)
   * [General Features](#general-features)
-  * Home Page
+  * [Home Page](#home-page)
   * Products Page
   * Product Details Page
   * Products Admin
@@ -139,9 +139,9 @@ The plan for this project was carried out using the Agile Methodology in Github.
    
    Using a Kanban board helped to focus on specific tasks and track the project progress.
 
-    ![user story](/documentation/readme/kanban-board-image.png)
+      ![user story](/documentation/readme/kanban-board-image.png)
 
-    ![user story](/documentation/readme/user-story.png)
+      ![user story](/documentation/readme/user-story.png)
 
 ## Marketing
 
@@ -205,18 +205,22 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
    The navbar on the site is split into two sections, the first section contains the main logo, search bar, an account icon and the bag icon. The second section contains the sites products categories. The navbar is fully responsive, and utilises a hamburger menu toggle on smaller screens.
 
-  The Categories links in the navbar have a transition that moves the category name up when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
+  The Categories links in the navbar when hovered over to give the user feedback that they are selecting that category. A dropdown menu will then show with further options. The account icon also contains a dropdown menu which displays different options depending on whether a user is logged in, and whether the user has a superuser account.
 
 
-    ![navbar](/documentation/readme/navbar-image.png)
+     ![navbar](/documentation/readme/navbar-image.png)
 
   * #### Footer
 
    The footer is broken into 4 distinct sections - a section that contains section contains contact information for the site, such as a link to the contact form, and social media links. The second information about the site, such as terms and conditions and policies. The third section contains a newsletter registration form for shopper to subscribe across the whole website. The final section is a disclaimer to let users know this site was created as an educational product and to remind users that no orders will be processed. The footer is fully responsive, and on small screens stacks the sections.
 
-    ![footer](/documentation/readme/footer.png)
+     ![footer](/documentation/readme/footer.png)
 
-     
+### Home Page
+
+  The home page contains background image, a mesage and shop now button. The button for "Shop now" brings the user to the product page.
+
+    ![home page](/documentation/readme/home-page.png)
 
 ## Testing
 
