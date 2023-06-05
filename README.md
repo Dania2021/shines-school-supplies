@@ -158,39 +158,39 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
    * Home Page
 
-    ![home page](/documentation/wireframes/home-wireframe.png)
+     ![home page](/documentation/wireframes/home-wireframe.png)
 
    * Login Page
 
-    ![login page](/documentation/wireframes/login-wireframe.png) 
+     ![login page](/documentation/wireframes/login-wireframe.png) 
 
    * Signup Page
 
-    ![signup page](/documentation/wireframes/signup-wireframe.png)
+     ![signup page](/documentation/wireframes/signup-wireframe.png)
 
     * Product page
 
-    ![product page](/documentation/wireframes/product-wireframe.png)
+     ![product page](/documentation/wireframes/product-wireframe.png)
 
     * Product Detail Page
 
-     ![product detail page](/documentation/wireframes/product-detail-wireframe.png)
+      ![product detail page](/documentation/wireframes/product-detail-wireframe.png)
 
     * Shopping Bag Page
 
-     ![shopping page page](/documentation/wireframes/shopping-bag-wireframe.png)
+      ![shopping page page](/documentation/wireframes/shopping-bag-wireframe.png)
 
     * Checkout Page
 
-     ![checkout page](/documentation/wireframes/checkout-wireframe.png)
+      ![checkout page](/documentation/wireframes/checkout-wireframe.png)
 
     * Contact Page
 
-     ![home page](/documentation/wireframes/contact-wireframe.png)
+      ![home page](/documentation/wireframes/contact-wireframe.png)
 
     * Profile Page
 
-     ![profile page](/documentation/wireframes/profile-wireframe.png)  
+      ![profile page](/documentation/wireframes/profile-wireframe.png)  
 
 ### Surface
 
