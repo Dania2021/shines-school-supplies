@@ -168,27 +168,27 @@ The plan for this project was carried out using the Agile Methodology in Github.
 
      ![signup page](/documentation/wireframes/signup-wireframe.png)
 
-    * Product page
+   * Product page
 
      ![product page](/documentation/wireframes/product-wireframe.png)
 
-    * Product Detail Page
+   * Product Detail Page
 
       ![product detail page](/documentation/wireframes/product-detail-wireframe.png)
 
-    * Shopping Bag Page
+   * Shopping Bag Page
 
       ![shopping page page](/documentation/wireframes/shopping-bag-wireframe.png)
 
-    * Checkout Page
+   * Checkout Page
 
       ![checkout page](/documentation/wireframes/checkout-wireframe.png)
 
-    * Contact Page
+   * Contact Page
 
       ![home page](/documentation/wireframes/contact-wireframe.png)
 
-    * Profile Page
+   * Profile Page
 
       ![profile page](/documentation/wireframes/profile-wireframe.png)  
 
