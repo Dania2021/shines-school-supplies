@@ -22,8 +22,8 @@ Live Site: [Shines School Supplies](https://shine-school-supplies.herokuapp.com/
     * [User Stories](#user-stories)
   * [Structure](#structure)
     * [Database Schema](#database-schema)
-  * Skeleton
-    * Wireframes
+  * [Skeleton](#skeleton)
+    * [Wireframes](#wireframes)
   * [Surface](#surface)
     * [Color Schema](#color-schema)
     * [Typography](#typography)
@@ -151,6 +151,46 @@ The plan for this project was carried out using the Agile Methodology in Github.
   The database model has been designed using [dbdiagram.io](https://dbdiagram.io/home).
 
   ![er diagram](/documentation/readme/erd-img.png) 
+
+### Skeleton
+
+#### Wireframes
+
+   * Home Page
+
+    ![home page](/documentation/wireframes/home-wireframe.png)
+
+   * Login Page
+
+    ![login page](/documentation/wireframes/login-wireframe.png) 
+
+   * Signup Page
+
+    ![signup page](/documentation/wireframes/signup-wireframe.png)
+
+    * Product page
+
+    ![product page](/documentation/wireframes/product-wireframe.png)
+
+    * Product Detail Page
+
+     ![product detail page](/documentation/wireframes/product-detail-wireframe.png)
+
+    * Shopping Bag Page
+
+     ![shopping page page](/documentation/wireframes/shopping-bag-wireframe.png)
+
+    * Checkout Page
+
+     ![checkout page](/documentation/wireframes/checkout-wireframe.png)
+
+    * Contact Page
+
+     ![home page](/documentation/wireframes/contact-wireframe.png)
+
+    * Profile Page
+
+     ![profile page](/documentation/wireframes/profile-wireframe.png)  
 
 ### Surface
 
